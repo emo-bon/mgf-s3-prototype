@@ -19,5 +19,6 @@ dvc remote modify myremote endpointurl https://s3.mesocentre.uca.fr
 git add .dvc/config
 git commit -m "update dvc config"
 dvc push
-
+git add .
+git commit -m "add small files"
 ```
