@@ -1,0 +1,5 @@
+[core]
+    remote = myremote
+['remote "myremote"']
+    url = s3://emobon-lfs-demo
+    endpointurl = https://s3.mesocentre.uca.fr
