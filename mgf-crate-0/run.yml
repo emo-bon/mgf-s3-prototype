@@ -1,0 +1,111 @@
+assemble: true
+base_correction: false
+both_reads: [DBH_AAAGOSDA_1_1_HMNJKDSX3.UDI200_clean, DBH_AAAGOSDA_1_2_HMNJKDSX3.UDI200_clean]
+cgc_chunk_size: 200
+cgc_step: true
+correction: false
+count_faa_from_previous_run: null
+cut_right: false
+detect_adapter_for_pe: false
+disable_trim_poly_g: null
+force_polyg_tail_trimming: null
+forward_reads: {class: File, format: 'edam:format_1930', path: /usr/local/scratch/metaGOflow-v1.0.0/input_data/DBH_AAAGOSDA_1_1_HMNJKDSX3.UDI200_clean.fastq.gz}
+input_for_motus: {class: File, path: workflows/pseudo_files/pseudo.merged.unfiltered.fasta}
+interproscan_threads: 3
+maskfile: {class: File, path: workflows/pseudo_files/pseudo.merged.cmsearch.all.tblout.deoverlapped}
+memory: 550
+min-contig-len: 200
+min_length_required: 140
+overlap_len_require: null
+overrepresentation_analysis: false
+predicted_faa_from_previous_run: {class: File, format: 'edam:format_1929', path: workflows/pseudo_files/pseudo.merged_CDS.faa}
+processed_read_files:
+- {class: File, path: workflows/pseudo_files/pseudo_1_clean.fastq.trimmed.fasta}
+- {class: File, path: workflows/pseudo_files/pseudo_2_clean.fastq.trimmed.fasta}
+processed_reads: {class: File, format: 'edam:format_1929', path: workflows/pseudo_files/pseudo.merged.fasta}
+protein_chunk_size_IPS: 2000000
+protein_chunk_size_eggnog: 100000
+protein_chunk_size_hmm: 50000
+qc_and_merge_step: true
+qualified_phred_quality: null
+reads_functional_annotation: true
+reverse_reads: {class: File, format: 'edam:format_1930', path: /usr/local/scratch/metaGOflow-v1.0.0/input_data/DBH_AAAGOSDA_1_2_HMNJKDSX3.UDI200_clean.fastq.gz}
+taxonomic_inventory: true
+threads: 24
+unqualified_percent_limit: null
+$namespaces: {edam: 'http://edamontology.org/', s: 'https://schema.org/'}
+5.8s_pattern: 5_8S_rRNA
+5s_pattern: mtPerm-5S
+CGC_postfixes: [_CDS.faa, _CDS.ffn]
+EggNOG_data_dir: {class: Directory, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/eggnog}
+EggNOG_db: {class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/eggnog/eggnog.db}
+EggNOG_diamond_db: {class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/eggnog/eggnog_proteins.dmnd}
+HMM_database: db_kofam.hmm
+HMM_database_dir: {class: Directory, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/db_kofam/}
+HMM_gathering_bit_score: true
+HMM_omit_alignment: true
+InterProScan_applications: [Pfam, TIGRFAM, PrositePatterns, ProSiteProfiles]
+InterProScan_databases: {class: Directory, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/interproscan-5.57-90.0/data}
+InterProScan_outputFormat: [TSV]
+Uniref90_db_txt: {class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/diamond/uniref90.txt}
+diamond_databaseFile: {class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/diamond/uniref90_v2019_08_diamond-v0.9.25.dmnd}
+diamond_header: uniref90_ID\tcontig_name\tpercentage_of_identical_matches\tlenght\tmismatch\tgapopen\tqstart\tqend\tsstart\tsend\tevalue\tbitscore\tprotein_name\tnum_in_cluster\ttaxonomy\ttax_id\trep_id
+fgs_train: illumina_10
+func_ann_names_hmmer: .hmm.tsv.without_header
+func_ann_names_ips: .I5.tsv.without_header
+go_config: {class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/tools/GO-slim/go_summary-config.json}
+graphs: {class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/kegg_pathways/graphs-20200805.pkl}
+hmmsearch_header: query_name\tquery_accession\ttlen\ttarget_name\ttarget_accession\tqlen\tfull_sequence_e-value\tfull_sequence_score\tfull_sequence_bias\t#\tof\tc-evalue\ti-evalue\tdomain_score\tdomain_bias\thmm_coord_from\thmm_coord_to\tali_coord_from\tali_coord_to\tenv_coord_from\tenv_coord_to\tacc\tdescription_of_target
+ips_header: protein_accession\tsequence_md5_digest\tsequence_length\tanalysis\tsignature_accession\tsignature_description\tstart_location\tstop_location\tscore\tstatus\tdate\taccession\tdescription\tgo\tpathways_annotations
+ko_file: {class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/kofam_ko_desc.tsv}
+lsu_db: {checksum: sha1$96dc05a4ab2933ec6f443a1a0ce0d225, class: File, format: 'edam:format_1929',
+  path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/silva_lsu/LSU.fasta}
+lsu_label: LSU_rRNA
+lsu_otus: {checksum: sha1$515df01f33ed8d5741fbe0e55e4780b9, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/silva_lsu/lsu2.otu}
+lsu_tax: {checksum: sha1$d521ce911cb9b94f4d304286ed9f8c3e, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/silva_lsu/slv_lsu_filtered2.txt}
+other_ncRNA_models: [alpha_tmRNA.RF01849, Bacteria_large_SRP.RF01854, beta_tmRNA.RF01850,
+  Dictyostelium_SRP.RF01570, Metazoa_SRP.RF00017, Protozoa_SRP.RF01856, RNaseP_arch.RF00373,
+  RNaseP_bact_b.RF00011, RNaseP_nuc.RF00009, tRNA.RF00005, Archaea_SRP.RF01857, Bacteria_small_SRP.RF00169,
+  cyano_tmRNA.RF01851, Fungi_SRP.RF01502, mt-tmRNA.RF02544, Plant_SRP.RF01855, RNase_MRP.RF00030,
+  RNaseP_bact_a.RF00010, RNase_P.RF01577, tmRNA.RF00023, tRNA-Sec.RF01852]
+pathways_classes: {class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/kegg_pathways/all_pathways_class.txt}
+pathways_names: {class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/kegg_pathways/all_pathways_names.txt}
+rfam_model_clans: {checksum: sha1$4dffaadeaac92821c19bd0e5a152f370, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/Rfam/rRNA.claninfo}
+rfam_models:
+- {checksum: sha1$30af1b9283ed10bfb22fbd1571be51e9, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/Rfam/ribosomal/RF00002.cm}
+- {checksum: sha1$94a864300ab97ea91c8e334af1f15ccf, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/Rfam/ribosomal/RF00177.cm}
+- {checksum: sha1$358464d747ca08973983181e6c5d3c36, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/Rfam/ribosomal/RF01959.cm}
+- {checksum: sha1$7e207426e32053bdad4dbe325f4d53f2, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/Rfam/ribosomal/RF01960.cm}
+- {checksum: sha1$21c240b829b6c8d44acb320826dd3988, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/Rfam/ribosomal/RF02540.cm}
+- {checksum: sha1$909e8186ecff869c21bd4f17b17d6d18, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/Rfam/ribosomal/RF02541.cm}
+- {checksum: sha1$f21a130574b87a3cae0eb4aab0f38e6a, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/Rfam/ribosomal/RF02542.cm}
+- {checksum: sha1$6ec013d40fbce6dbbb2a1c35e68d777c, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/Rfam/ribosomal/RF02543.cm}
+- {checksum: sha1$91f899f34613e77694b97c993414e5c2, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/Rfam/ribosomal/RF02546.cm}
+- {checksum: sha1$43f94845c34819ebbecfa9050a992ea9, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/Rfam/ribosomal/RF02547.cm}
+- {checksum: sha1$bb386488759438f4c3648044a6e7e990, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/Rfam/other/alpha_tmRNA.cm}
+- {checksum: sha1$b0d6d8960d012a40f7b2b4c8ed50cb1f, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/Rfam/other/Plant_SRP.cm}
+- {checksum: sha1$0b85ae3b178150ad302fe295ea5794dc, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/Rfam/other/Archaea_SRP.cm}
+- {checksum: sha1$4f7bb93a56ea9e3f4f00df19e2b1efe3, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/Rfam/other/Protozoa_SRP.cm}
+- {checksum: sha1$0ce2c0407c18a6a6f67d907718556951, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/Rfam/other/Bacteria_large_SRP.cm}
+- {checksum: sha1$339d31cf05f52736c8036d8a28824f53, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/Rfam/other/RNase_MRP.cm}
+- {checksum: sha1$aac546e28fe85eb6478dceab842b7ba2, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/Rfam/other/Bacteria_small_SRP.cm}
+- {checksum: sha1$80b98e26b20e3dbcf025d5414023d5e1, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/Rfam/other/RNaseP_arch.cm}
+- {checksum: sha1$af26a7a601e4b0ae4b7edf7c9459b02d, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/Rfam/other/beta_tmRNA.cm}
+- {checksum: sha1$4501e8e0357aefbf76849a619a423c94, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/Rfam/other/RNaseP_bact_a.cm}
+- {checksum: sha1$60ba0326655a2b558ec7adad571c7d90, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/Rfam/other/cyano_tmRNA.cm}
+- {checksum: sha1$3d5c292715b9df28d74ed032fdcb2041, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/Rfam/other/RNaseP_bact_b.cm}
+- {checksum: sha1$57d27c4d9098f3a05447030c28330238, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/Rfam/other/Dictyostelium_SRP.cm}
+- {checksum: sha1$387d3694d17a2fd5bb9edebb586105af, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/Rfam/other/RNase_P.cm}
+- {checksum: sha1$b874eb43eca0af9dbdd402ae8cdc7d76, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/Rfam/other/Fungi_SRP.cm}
+- {checksum: sha1$d82176ee498688ffeaba25263956123e, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/Rfam/other/RNaseP_nuc.cm}
+- {checksum: sha1$2e0d37364dd446be81710d013d6b8947, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/Rfam/other/Metazoa_SRP.cm}
+- {checksum: sha1$2b6475b810ce90021bb742473bc1f455, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/Rfam/other/tmRNA.cm}
+- {checksum: sha1$77b2478f1f638066d2eed2b18b0c518b, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/Rfam/other/mt-tmRNA.cm}
+- {checksum: sha1$adf704922a7f539d0a2ea5132e36db42, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/Rfam/other/tRNA.cm}
+- {checksum: sha1$73b3442df0671d75ced6a540c4bc4b31, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/Rfam/other/tRNA-Sec.cm}
+seq_type: '0'
+ssu_db: {checksum: sha1$6b0580823a8c6860a0674428745fb943, class: File, format: 'edam:format_1929',
+  path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/silva_ssu/SSU.fasta}
+ssu_label: SSU_rRNA
+ssu_otus: {checksum: sha1$75d6cb73018a4f969063de6927cfb1ab, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/silva_ssu/ssu2.otu}
+ssu_tax: {checksum: sha1$f4e7019da9e4c9e38cf3bbd8d304bf0c, class: File, path: /usr/local/scratch/metaGOflow-v1.0.0/ref-dbs/silva_ssu/slv_ssu_filtered2.txt}
