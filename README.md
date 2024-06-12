@@ -44,6 +44,7 @@ The remaining small files can then be committed directly.
 ```
 git add .
 git commit -m "add small files"
+git push origin
 ```
 
 ## Use case 3: pulling large files
