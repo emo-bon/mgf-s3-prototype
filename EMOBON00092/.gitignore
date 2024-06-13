@@ -1,0 +1,16 @@
+/DBH_1_clean.fastq.trimmed.fasta
+/DBH_1_clean.fastq.trimmed.qc_summary
+/DBH_2_clean.fastq.trimmed.fasta
+/DBH_2_clean.fastq.trimmed.qc_summary
+/DBH.merged_CDS.faa
+/DBH.merged_CDS.ffn
+/DBH.merged.cmsearch.all.tblout.deoverlapped
+/DBH.merged.fasta
+/DBH.merged.motus.tsv
+/DBH.merged.qc_summary
+/DBH.merged.unfiltered_fasta
+/fastp.html
+/final.contigs.fa
+/RNA-counts
+/run.yml
+/config.yml
