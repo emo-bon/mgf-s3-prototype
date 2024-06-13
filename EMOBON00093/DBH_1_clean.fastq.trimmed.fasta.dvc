@@ -1,0 +1,5 @@
+outs:
+- md5: 66ee2d59e4b05eefdfb1f8b8be202f1e
+  size: 1932528538
+  hash: md5
+  path: DBH_1_clean.fastq.trimmed.fasta
