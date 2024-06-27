@@ -82,7 +82,7 @@
         "contentSize": 7855217,
         "encodingFormat": "text/plain",
         "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/2b/f95636c4a5ce88dcc699509c455067",
-        "identifier" : "2bf95636c4a5ce88dcc699509c455067",
+        "checksum" : "2bf95636c4a5ce88dcc699509c455067",
         "description": "Sequence hits against covariance model databases. Mandatory to run partially the functional annotation step of metaGOflow"
     },
     {
@@ -92,7 +92,7 @@
         "contentSize": 6304783433,
         "encodingFormat": "text/plain",
         "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/a1/f618b884a6f8a21118016fd754050a",
-        "identifier" : "a1f618b884a6f8a21118016fd754050a",
+        "checksum" : "a1f618b884a6f8a21118016fd754050a",
         "description": "Merged filtered reads"
     },
     {
@@ -102,7 +102,7 @@
         "contentSize": 262,
         "encodingFormat": "text/tab-separated-values",
         "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/7f/55bed89a5e17e1f53ba00c9ca28f74",
-        "identifier" : "7f55bed89a5e17e1f53ba00c9ca28f74",
+        "checksum" : "7f55bed89a5e17e1f53ba00c9ca28f74",
         "description": "Assignment and abundance of mOTUs and refOTUs"
     },
     {
@@ -112,7 +112,7 @@
         "contentSize": 219,
         "encodingFormat": "text/plain",
         "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/8c/12891fcaf5edb77d730f904af9bdb7",
-        "identifier" : "8c12891fcaf5edb77d730f904af9bdb7",
+        "checksum" : "8c12891fcaf5edb77d730f904af9bdb7",
         "description": "Summary with statistics of the merged reads"        
     },
     {
@@ -122,7 +122,7 @@
         "contentSize": 11253236797,
         "encodingFormat": "text/plain",
         "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/88/c36399ef0dfd7ae27608b042a8b379",
-        "identifier" : "88c36399ef0dfd7ae27608b042a8b379",
+        "checksum" : "88c36399ef0dfd7ae27608b042a8b379",
         "description": "Merged unfiltered reads"        
     },
     {
@@ -132,7 +132,7 @@
         "contentSize": 2944752462,
         "encodingFormat": "text/plain",
         "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/71/25ba6b869d00d0e2027712a641cb1b",
-        "identifier" : "7125ba6b869d00d0e2027712a641cb1b",
+        "checksum" : "7125ba6b869d00d0e2027712a641cb1b",
         "description": "FASTA formatted list of sequences translated to amino acid sequence"        
     },
     {
@@ -142,7 +142,7 @@
         "contentSize": 5912560492,
         "encodingFormat": "text/plain",
         "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/00/e2d1630b695f4e29a3f7f0a39a1cce",
-        "identifier" : "00e2d1630b695f4e29a3f7f0a39a1cce",
+        "checksum" : "00e2d1630b695f4e29a3f7f0a39a1cce",
         "description": "These are the assembled contig sequences from the merged reads in FASTA format"
     },
     {
@@ -152,7 +152,7 @@
         "contentSize": 1932528538,
         "encodingFormat": "text/plain",
         "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/66/ee2d59e4b05eefdfb1f8b8be202f1e",
-        "identifier" : "66ee2d59e4b05eefdfb1f8b8be202f1e",
+        "checksum" : "66ee2d59e4b05eefdfb1f8b8be202f1e",
         "description": "Filtered .fastq file of the single-end reads (forward)"
     },
     {
@@ -162,7 +162,7 @@
         "contentSize": 219,
         "encodingFormat": "text/plain",
         "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/25/0f89687c4c7b15d970064a4d73ec58",
-        "identifier" : "250f89687c4c7b15d970064a4d73ec58",
+        "checksum" : "250f89687c4c7b15d970064a4d73ec58",
         "description": "Summary with statistics of the single-end reads (forward)"        
     },
     {
@@ -172,7 +172,7 @@
         "contentSize": 1931917801,
         "encodingFormat": "text/plain",
         "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/ca/71a986c1b6bc5eaa45f6fb958b1800",
-        "identifier" : "ca71a986c1b6bc5eaa45f6fb958b1800",
+        "checksum" : "ca71a986c1b6bc5eaa45f6fb958b1800",
         "description": "Filtered .fastq file of the single-end reads (reverse)"
     },
     {
@@ -182,7 +182,7 @@
         "contentSize": 219,
         "encodingFormat": "text/plain",
         "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/25/0f89687c4c7b15d970064a4d73ec58",
-        "identifier" : "250f89687c4c7b15d970064a4d73ec58",
+        "checksum" : "250f89687c4c7b15d970064a4d73ec58",
         "description": "Summary with statistics of the single-end reads (reverse)."        
     },
     {
@@ -192,7 +192,7 @@
         "contentSize": 31,
         "encodingFormat": "text/plain",
         "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/bb/743d86945a2431cb56d25ffaba3dd2",
-        "identifier" : "bb743d86945a2431cb56d25ffaba3dd2",
+        "checksum" : "bb743d86945a2431cb56d25ffaba3dd2",
         "description": "numbers of RNA's counted"        
     },
     {
@@ -202,7 +202,7 @@
         "contentSize": 2857,
         "encodingFormat": "text/html",
         "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/c5/255fa5a49cee6faf6d464bd3c7d43a",
-        "identifier" : "c5255fa5a49cee6faf6d464bd3c7d43a",
+        "checksum" : "c5255fa5a49cee6faf6d464bd3c7d43a",
         "description": "Config yml file"        
     },
     {
@@ -212,7 +212,7 @@
         "contentSize": 386191,
         "encodingFormat": "text/html",
         "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/7c/64f500f04bd0bf1aa7513af0adf4cc",
-        "identifier" : "7c64f500f04bd0bf1aa7513af0adf4cc",
+        "checksum" : "7c64f500f04bd0bf1aa7513af0adf4cc",
         "description": "Quality control and preprocessing of FASTQ files"        
     },
     {
@@ -222,7 +222,7 @@
         "contentSize": 220538023,
         "encodingFormat": "text/plain",
         "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/3a/5a027acf8e855116ce305a5d9259c0",
-        "identifier" : "3a5a027acf8e855116ce305a5d9259c0",
+        "checksum" : "3a5a027acf8e855116ce305a5d9259c0",
         "description": "These are the assembled contig sequences from the merged reads in FASTA format"       
     },
     {
@@ -232,7 +232,7 @@
         "contentSize": 10233,
         "encodingFormat": "text/plain",
         "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/ff/d2d39f9eeea068cbdb01874ed3839e",
-        "identifier" : "ffd2d39f9eeea068cbdb01874ed3839e",
+        "checksum" : "ffd2d39f9eeea068cbdb01874ed3839e",
         "description": "Run yml file"       
     },
     {
@@ -270,7 +270,7 @@
                     "contentSize": 88,
                     "encodingFormat": "text/plain",
                     "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/bb/5a10cd8a16c6fd3e7bd33a720e5949",
-                    "identifier" : "bb5a10cd8a16c6fd3e7bd33a720e5949",
+                    "checksum" : "bb5a10cd8a16c6fd3e7bd33a720e5949",
                     "description": "Geno Ontology summary statistics"
                 },
                 {
@@ -280,7 +280,7 @@
                     "contentSize": 118,
                     "encodingFormat": "text/plain",
                     "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/ac/db799e67f2b8260fce3196340f384a",
-                    "identifier" : "acdb799e67f2b8260fce3196340f384a",
+                    "checksum" : "acdb799e67f2b8260fce3196340f384a",
                     "description": "InterProScan summary statistics"
                 },
                 {
@@ -290,7 +290,7 @@
                     "contentSize": 85,
                     "encodingFormat": "text/plain",
                     "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/19/627e65214e17c7e73a9b334c01e3dd",
-                    "identifier" : "19627e65214e17c7e73a9b334c01e3dd",
+                    "checksum" : "19627e65214e17c7e73a9b334c01e3dd",
                     "description": "Kegg Ontology summary statistics"
                 },
                 {
@@ -300,7 +300,7 @@
                     "contentSize": 88,
                     "encodingFormat": "text/plain",
                     "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/ef/6d397d289c7f115b08d32768c214eb",
-                    "identifier" : "ef6d397d289c7f115b08d32768c214eb",
+                    "checksum" : "ef6d397d289c7f115b08d32768c214eb",
                     "description": "ORF summary statistics"
                  },
                  {
@@ -310,7 +310,7 @@
                     "contentSize": 94,
                     "encodingFormat": "text/plain",
                     "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/b4/3f00cc0455e70b7a41e6cbff5ae1f5",
-                    "identifier" : "b43f00cc0455e70b7a41e6cbff5ae1f5",
+                    "checksum" : "b43f00cc0455e70b7a41e6cbff5ae1f5",
                     "description": "Pfam summary statistcs"                 
                  },
             {
@@ -320,7 +320,7 @@
                 "contentSize": 16787551,
                 "encodingFormat": "application/gzip",
                 "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/7e/cccb65bc11b96ecfdd5dff81adcadf",
-                "identifier" : "7ecccb65bc11b96ecfdd5dff81adcadf",
+                "checksum" : "7ecccb65bc11b96ecfdd5dff81adcadf",
                 "description": "Merged contigs HMM summary"
             },
             {
@@ -330,7 +330,7 @@
                 "contentSize": 149935,
                 "encodingFormat": "text/plain",
                 "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/dd/263fdb1d15dfc38f7ac40295a6f799",
-                "identifier" : "dd263fdb1d15dfc38f7ac40295a6f799",
+                "checksum" : "dd263fdb1d15dfc38f7ac40295a6f799",
                 "description": "Merged contigs GO summary"
             },
             {
@@ -340,7 +340,7 @@
                 "contentSize": 599575,
                 "encodingFormat": "text/plain",
                 "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/69/b29a74b728d187d3bfed806eb7519d",
-                "identifier" : "69b29a74b728d187d3bfed806eb7519d",
+                "checksum" : "69b29a74b728d187d3bfed806eb7519d",
                 "description": "Merged contigs InterProScan"
             },
             {
@@ -350,7 +350,7 @@
                 "contentSize": 127053,
                 "encodingFormat": "text/plain",
                 "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/e4/293f663d81c3274963fe2ec4e741f8",
-                "identifier" : "e4293f663d81c3274963fe2ec4e741f8",
+                "checksum" : "e4293f663d81c3274963fe2ec4e741f8",
                 "description": "Merged contigs KO summary"
             },
             {
@@ -360,7 +360,7 @@
                 "contentSize": 510926,
                 "encodingFormat": "text/plain",
                 "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/74/e27e8fcb4cc71c10f9f7d7b4c30d12",
-                "identifier" : "74e27e8fcb4cc71c10f9f7d7b4c30d12",
+                "checksum" : "74e27e8fcb4cc71c10f9f7d7b4c30d12",
                 "description": "Merged contigs PFAM summary"
             },
             {
@@ -370,7 +370,7 @@
                 "contentSize": 2340635561,
                 "encodingFormat": "application/gzip",
                 "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/b9/596ac02634629c7d9f76de7a8f2f5e",
-                "identifier" : "b9596ac02634629c7d9f76de7a8f2f5e",
+                "checksum" : "b9596ac02634629c7d9f76de7a8f2f5e",
                 "description": "Merged contigs CDS I5 summary"
             },
     {
@@ -404,7 +404,7 @@
                 "contentSize": 1856,
                 "encodingFormat": "application/gzip",
                 "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/13/cbb6e7471f1719a39f780c1968f450",
-                "identifier" : "13cbb6e7471f1719a39f780c1968f450",
+                "checksum" : "13cbb6e7471f1719a39f780c1968f450",
                 "description": "5_8S.fa.gz"
             },
             {
@@ -414,7 +414,7 @@
                 "contentSize": 3788,
                 "encodingFormat": "application/gzip",
                 "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/28/664f9e6772fb457b33b1880acf0037",
-                "identifier" : "28664f9e6772fb457b33b1880acf0037",
+                "checksum" : "28664f9e6772fb457b33b1880acf0037",
                 "description": "FASTA file containing bacteria nucleotide sequences"
             },
             {
@@ -424,7 +424,7 @@
                 "contentSize": 5480,
                 "encodingFormat": "application/gzip",
                 "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/0f/1d9a33747ca4dbb309e0df99c2a14a",
-                "identifier" : "0f1d9a33747ca4dbb309e0df99c2a14a",
+                "checksum" : "0f1d9a33747ca4dbb309e0df99c2a14a",
                 "description": "FASTA file containing bacteria nucleotide sequences"
             },
             {
@@ -434,7 +434,7 @@
                 "contentSize": 3127,
                 "encodingFormat": "application/gzip",
                 "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/5b/e4ec9d74873a522cd15611d79d8d3f",
-                "identifier" : "5be4ec9d74873a522cd15611d79d8d3f",
+                "checksum" : "5be4ec9d74873a522cd15611d79d8d3f",
                 "description": "LSU ribosomal RNA sequences for Archaea."
             },
             {
@@ -444,7 +444,7 @@
                 "contentSize": 1036560,
                 "encodingFormat": "application/gzip",
                 "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/a5/1afbebee8dcb3d86120f9dc75782f8",
-                "identifier" : "a51afbebee8dcb3d86120f9dc75782f8",
+                "checksum" : "a51afbebee8dcb3d86120f9dc75782f8",
                 "description": "sequence data for bacterial Large Subunit ribosomal RNA (LSU rRNA) molecule"
             },
             {
@@ -454,7 +454,7 @@
                 "contentSize": 53878,
                 "encodingFormat": "application/gzip",
                 "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/1c/32765287e1b6023b2692950cb84820",
-                "identifier" : "1c32765287e1b6023b2692950cb84820",
+                "checksum" : "1c32765287e1b6023b2692950cb84820",
                 "description": "sequence data for eukaryotic Large Subunit ribosomal RNA (LSU rRNA) molecule"
             },
             {
@@ -464,7 +464,7 @@
                 "contentSize": 5256,
                 "encodingFormat": "application/gzip",
                 "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/de/17daa37a4dd5e2dfc1ee7dea6efe2a",
-                "identifier" : "de17daa37a4dd5e2dfc1ee7dea6efe2a",
+                "checksum" : "de17daa37a4dd5e2dfc1ee7dea6efe2a",
                 "description": "sequence data for a specific bacterial RNase P molecule"
             },
             {
@@ -474,7 +474,7 @@
                 "contentSize": 215,
                 "encodingFormat": "application/gzip",
                 "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/ba/db641ae9470949054fd5fb51a55887",
-                "identifier" : "badb641ae9470949054fd5fb51a55887",
+                "checksum" : "badb641ae9470949054fd5fb51a55887",
                 "description": "sequence data for a specific bacterial RNase P molecule"
             },
             {
@@ -484,7 +484,7 @@
                 "contentSize": 2221,
                 "encodingFormat": "application/gzip",
                 "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/4a/68cf95aa73e0b8beee9648006c5521",
-                "identifier" : "4a68cf95aa73e0b8beee9648006c5521",
+                "checksum" : "4a68cf95aa73e0b8beee9648006c5521",
                 "description": "sequence data for a archaeal Small Subunit ribosomal RNA (SSU rRNA) molecule"
             },
             {
@@ -494,7 +494,7 @@
                 "contentSize": 492439,
                 "encodingFormat": "application/gzip",
                 "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/c4/865095d68b928a9321c9a1eadbd1f9",
-                "identifier" : "c4865095d68b928a9321c9a1eadbd1f9",
+                "checksum" : "c4865095d68b928a9321c9a1eadbd1f9",
                 "description": "sequence data for a bacterial Small Subunit ribosomal RNA (SSU rRNA) molecule"
             },
             {
@@ -504,7 +504,7 @@
                 "contentSize": 27543,
                 "encodingFormat": "application/gzip",
                 "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/9e/06f13fbcd0017e7481e0b39e4baa3d",
-                "identifier" : "9e06f13fbcd0017e7481e0b39e4baa3d",
+                "checksum" : "9e06f13fbcd0017e7481e0b39e4baa3d",
                 "description": "sequence data for a eukaryotic Small Subunit ribosomal RNA (SSU rRNA) molecule"
             },
             {
@@ -514,7 +514,7 @@
                 "contentSize": 2760,
                 "encodingFormat": "application/gzip",
                 "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/7d/d7bfcfb474d56c83db3ed45139e8f6",
-                "identifier" : "7dd7bfcfb474d56c83db3ed45139e8f6",
+                "checksum" : "7dd7bfcfb474d56c83db3ed45139e8f6",
                 "description": "sequence data for an alpha-type transfer-messenger RNA (tmRNA) molecule"
             },
             {
@@ -524,7 +524,7 @@
                 "contentSize": 488,
                 "encodingFormat": "application/gzip",
                 "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/2b/480f8b2d6c8a69f692ae2c166518dc",
-                "identifier" : "2b480f8b2d6c8a69f692ae2c166518dc",
+                "checksum" : "2b480f8b2d6c8a69f692ae2c166518dc",
                 "description": "sequence data for a cyanobacterial transfer-messenger RNA (tmRNA) molecule"
             },
             {
@@ -534,7 +534,7 @@
                 "contentSize": 1625,
                 "encodingFormat": "application/gzip",
                 "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/9b/98d6390f4b2c8fae5d7b2ff5b7a6ff",
-                "identifier" : "9b98d6390f4b2c8fae5d7b2ff5b7a6ff",
+                "checksum" : "9b98d6390f4b2c8fae5d7b2ff5b7a6ff",
                 "description": "sequence data for a specific transfer RNA (tRNA) molecule"
             },
             {
@@ -544,7 +544,7 @@
                 "contentSize": 177711,
                 "encodingFormat": "application/gzip",
                 "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/32/ba6683fa8a8e40fde1a83e00acad18",
-                "identifier" : "32ba6683fa8a8e40fde1a83e00acad18",
+                "checksum" : "32ba6683fa8a8e40fde1a83e00acad18",
                 "description": " likely contains the sequence data for a transfer RNA (tRNA) molecule"
             },
             {
@@ -554,7 +554,7 @@
                 "contentSize": 7624,
                 "encodingFormat": "application/gzip",
                 "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/94/4b55c85125338ca1d1f4d075656a8d",
-                "identifier" : "944b55c85125338ca1d1f4d075656a8d",
+                "checksum" : "944b55c85125338ca1d1f4d075656a8d",
                 "description": "sequence data for a transfer-messenger RNA (tmRNA) molecule"
             },
     {
@@ -586,7 +586,7 @@
                 "contentSize": 970445,
                 "encodingFormat": "application/gzip",
                 "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/4d/383130eee95fe8f97b533e2de21dfa",
-                "identifier" : "4d383130eee95fe8f97b533e2de21dfa",
+                "checksum" : "4d383130eee95fe8f97b533e2de21dfa",
                 "description": "LSU sequences used for indentification"
             },
             {
@@ -596,7 +596,7 @@
                 "contentSize": 54959,
                 "encodingFormat": "text/tab-separated-values",
                 "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/64/bd3b85367cd4ac8fbd7552a1215cdf",
-                "identifier" : "64bd3b85367cd4ac8fbd7552a1215cdf",
+                "checksum" : "64bd3b85367cd4ac8fbd7552a1215cdf",
                 "description": "Tab-separated formatted taxon counts for LSU sequences"
             },
             {
@@ -606,7 +606,7 @@
                 "contentSize": 47253,
                 "encodingFormat": "text/plain",
                 "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/8a/9a05d7f9604b4b16e65bcb36a5687b",
-                "identifier" : "8a9a05d7f9604b4b16e65bcb36a5687b",
+                "checksum" : "8a9a05d7f9604b4b16e65bcb36a5687b",
                 "description": "Text-based taxon counts for LSU sequences"
             },
             {
@@ -616,7 +616,7 @@
                 "contentSize": 65712,
                 "encodingFormat": "application/json-ld",
                 "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/68/1fcd4bd22247fbb959ddcf4965a79b",
-                "identifier" : "681fcd4bd22247fbb959ddcf4965a79b",
+                "checksum" : "681fcd4bd22247fbb959ddcf4965a79b",
                 "description": "BIOM formatted hdf5 taxon counts for LSU sequences"
             },
             {
@@ -626,7 +626,7 @@
                 "contentSize": 76542,
                 "encodingFormat": "text/plain",
                 "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/7e/86769201a874fd65dd42b347123b2f",
-                "identifier" : "7e86769201a874fd65dd42b347123b2f",
+                "checksum" : "7e86769201a874fd65dd42b347123b2f",
                 "description": "BIOM formatted taxon counts for LSU sequences"
             },
             {
@@ -636,7 +636,7 @@
                 "contentSize": 307411,
                 "encodingFormat": "application/xhtml+xml",
                 "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/42/63fd4dace9eac29a1a95cac78e24fa",
-                "identifier" : "4263fd4dace9eac29a1a95cac78e24fa",
+                "checksum" : "4263fd4dace9eac29a1a95cac78e24fa",
                 "description": "Krona summary of LSU taxonomic inventory"
             },
     {
@@ -660,7 +660,7 @@
             "contentSize": 472282,
             "encodingFormat": "application/gzip",
             "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/0e/ba362214d172510bcadbe23fcfa935",
-            "identifier" : "0eba362214d172510bcadbe23fcfa935",
+            "checksum" : "0eba362214d172510bcadbe23fcfa935",
             "description": "SSU sequences used for identification"
         },
         {
@@ -670,7 +670,7 @@
             "contentSize": 35379,
             "encodingFormat": "text/tab-separated-values",
             "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/77/122c614eaac158e124e57e1a273be6",
-            "identifier" : "77122c614eaac158e124e57e1a273be6",
+            "checksum" : "77122c614eaac158e124e57e1a273be6",
             "description": "Tab-separated formatted taxon counts for SSU sequences"
         },
         {
@@ -680,7 +680,7 @@
             "contentSize": 29980,
             "encodingFormat": "text/plain",
             "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/48/5e166262964524c5f3106798f82645",
-            "identifier" : "485e166262964524c5f3106798f82645",
+            "checksum" : "485e166262964524c5f3106798f82645",
             "description": "Text-based formatted taxon counts for SSU sequences"
         },
         {
@@ -690,7 +690,7 @@
             "contentSize": 55472,
             "encodingFormat": "application/json-ld",
             "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/82/c3e3acb8df4b59f588853b91977579",
-            "identifier" : "82c3e3acb8df4b59f588853b91977579",
+            "checksum" : "82c3e3acb8df4b59f588853b91977579",
             "description": "BIOM formatted hdf5 taxon counts for SSU sequences"
         },
         {
@@ -700,7 +700,7 @@
             "contentSize": 49705,
             "encodingFormat": "text/plain",
             "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/0a/75c2323970955f7fac622e0a325c1c",
-            "identifier" : "0a75c2323970955f7fac622e0a325c1c",
+            "checksum" : "0a75c2323970955f7fac622e0a325c1c",
             "description": "BIOM formatted taxon counts for SSU sequences"
         },
         {
@@ -710,7 +710,7 @@
             "contentSize": 283427,
             "encodingFormat": "application/xhtml+xml",
             "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/9d/cae327b1fc0135767b3d27c0a63f29",
-            "identifier" : "9dcae327b1fc0135767b3d27c0a63f29",
+            "checksum" : "9dcae327b1fc0135767b3d27c0a63f29",
             "description": "Krona summary of SSU taxonomic inventory"
         }
 ]
