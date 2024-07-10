@@ -1,6 +1,7 @@
 { "@context": {
-    "@base":"",
-    "@vocab":"https://w3id.org/ro/crate/1.2-DRAFT/context"}, 
+    "@base":"https://github.com/emo-bon/",
+    "@vocab":"https://w3id.org/ro/crate/1.2-DRAFT/context"
+},
   "@graph": [
     {
         "@type": "CreativeWork",
@@ -29,24 +30,7 @@
         "identifier": "https://creativecommons.org/licenses/by/4.0/legalcode",
         "name": "Creative Commons (CC-BY 4.0)"
     },
-    {
-        "@id": "observatory-rformosa-crate/blob/main/logsheets/transformed/sediment_measured.csv",
-        "@type": "File",
-        "name": "EMOBON_RFormosa_So_210805_micro_2",
-        "description": "Environmental metadata."
-    },
-    {
-        "@id": "observatory-rformosa-crate/blob/main/logsheets/transformed/sediment_observatory.csv",
-        "@type": "File",
-        "name": "EMOBON_RFormosa_So_210805_micro_2",
-        "description": "Information about the station."
-    },
-    {
-        "@id": "observatory-rformosa-crate/blob/main/logsheets/transformed/sediment_sampling.csv",
-        "@type": "File",
-        "name": "EMOBON_RFormosa_So_210805_micro_2",
-        "description": "Information about the sampling procedure."
-    },
+
     {
         "@id": "./", 
         "@type": "File",
@@ -74,8 +58,20 @@
                         {"@id": "functional-annotation"},
                         {"@id": "mgf-s3-prototype/blob/main/EMOBON00093/run.yml"},
                         {"@id": "sequence-categorisation"},
-                        {"@id": "taxonomy-summary"}
+                        {"@id": "taxonomy-summary"},
+                        {"@id": "mgf-s3-prototype/blob/main/EMOBON00093/provenance.json"}
                     ] 
+    },
+    {
+        "@id": "mgf-s3-prototype/blob/main/EMOBON00093/provenance.json",
+        "@type": ["File", "CPMProvenanceFile"],
+        "conformsTo": {"@id": "https://by-covid.github.io/cpm-ro-crate/0.2/"},
+        "encodingFormat": "application/ld+json",
+        "name": "EMOBON00093 Provenanace CPM File",
+        "description": "CPM compliant provenance file for EMOBON00093",
+        "about": [
+            {"@id": "_:EMOBON00093-CPM-provgen"}
+        ]
     },
     {
         "@id": "mgf-s3-prototype/blob/main/EMOBON00093/DBH.merged.cmsearch.all.tblout.deoverlapped",

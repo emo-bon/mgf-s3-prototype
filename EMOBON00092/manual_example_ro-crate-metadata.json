@@ -31,24 +31,6 @@
         "name": "Creative Commons (CC-BY 4.0)"
     },
     {
-        "@id": "observatory-rformosa-crate/blob/main/logsheets/transformed/sediment_measured.csv",
-        "@type": "File",
-        "name": "EMOBON_RFormosa_So_210805_micro_1",
-        "description": "Environmental metadata."
-    },
-    {
-        "@id": "observatory-rformosa-crate/blob/main/logsheets/transformed/sediment_observatory.csv",
-        "@type": "File",
-        "name": "EMOBON_RFormosa_So_210805_micro_1",
-        "description": "Information about the station."
-    },
-    {
-        "@id": "observatory-rformosa-crate/blob/main/logsheets/transformed/sediment_sampling.csv",
-        "@type": "File",
-        "name": "EMOBON_RFormosa_So_210805_micro_1",
-        "description": "Information about the sampling procedure."
-    },
-    {
         "@id": "./", 
         "@type": "File",
         "name" : "MetaGoFlow sequence data results for sample EMOBON00092",                       
@@ -74,8 +56,20 @@
                         {"@id": "functional-annotation"},
                         {"@id": "mgf-s3-prototype/blob/main/EMOBON00092/run.yml"},
                         {"@id": "sequence-categorisation"},
-                        {"@id": "taxonomy-summary"}
+                        {"@id": "taxonomy-summary"},
+                        {"@id": "mgf-s3-prototype/blob/main/EMOBON00092/provenance.json"}
                     ] 
+    },
+    {
+        "@id": "mgf-s3-prototype/blob/main/EMOBON00092/provenance.json",
+        "@type": ["File", "CPMProvenanceFile"],
+        "conformsTo": {"@id": "https://by-covid.github.io/cpm-ro-crate/0.2/"},
+        "encodingFormat": "application/ld+json",
+        "name": "EMOBON00092 Provenanace CPM File",
+        "description": "CPM compliant provenance file for EMOBON00092",
+        "about": [
+            {"@id": "_:EMOBON00092-CPM-provgen"}
+        ]
     },
     {
         "@id": "mgf-s3-prototype/blob/main/EMOBON00092/DBH.merged.cmsearch.all.tblout.deoverlapped",
