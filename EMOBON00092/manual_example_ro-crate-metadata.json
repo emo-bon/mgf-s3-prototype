@@ -92,7 +92,7 @@
         "@type": "File",
         "name": "Merged filtered reads",
         "contentSize": 7477104308,
-        "encodingFormat": "text/plain",
+        "encodingFormat": "text/x-fasta",
         "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/85/1bd7b6823e28f20d552f99fc3ce2cb",
         "checksum" : "851bd7b6823e28f20d552f99fc3ce2cb",
         "description": "Merged filtered reads"
@@ -102,7 +102,7 @@
         "@type": "File",
         "name": "motus list",
         "contentSize": 1091,
-        "encodingFormat": "text/tab-separated-values",
+        "encodingFormat": "https://www.iana.org/assignments/media-types/text/tab-separated-values",
         "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/86/da0a637a532316a03536bce851764e",
         "checksum" : "86da0a637a532316a03536bce851764e",
         "description": "Assignment and abundance of mOTUs and refOTUs"
@@ -132,7 +132,7 @@
         "@type": "File",
         "name": "Gene coding protein sequences (CDS) in FASTA format",
         "contentSize": 3558420974,
-        "encodingFormat": "text/plain",
+        "encodingFormat": "text/x-fasta",
         "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/4d/8cdbafc5a3e7fd83b1cb1630d5d0ce",
         "checksum" : "4d8cdbafc5a3e7fd83b1cb1630d5d0ce",
         "description": "FASTA formatted list of sequences translated to amino acid sequence"        
@@ -142,7 +142,7 @@
         "@type": "File",
         "name": "Gene coding nucleotide sequences (CDS) in FASTA format",
         "contentSize": 7188356555,
-        "encodingFormat": "text/plain",
+        "encodingFormat": "text/x-fasta",
         "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/0d/7e12f3972d4079b00f77266d3d32fb",
         "checksum" : "0d7e12f3972d4079b00f77266d3d32fb",
         "description": "These are the assembled contig sequences from the merged reads in FASTA format"
@@ -152,7 +152,7 @@
         "@type": "File",
         "name": "FASTQ sequences trimmed - read 1",
         "contentSize": 3389164643,
-        "encodingFormat": "text/plain",
+        "encodingFormat": "text/x-fasta",
         "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/5c/d89fac220414d326a964b9bbc983c7",
         "checksum" : "5cd89fac220414d326a964b9bbc983c7",
         "description": "Filtered .fastq file of the single-end reads (forward)"
@@ -172,7 +172,7 @@
         "@type": "File",
         "name": "FASTQ sequences trimmed - read 2",
         "contentSize": 3386598384,
-        "encodingFormat": "text/plain",
+        "encodingFormat": "text/x-fasta",
         "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/46/ab4780f515efebaf20c4526ed6d1c0",
         "checksum" : "46ab4780f515efebaf20c4526ed6d1c0",
         "description": "Filtered .fastq file of the single-end reads (reverse)"
@@ -212,7 +212,7 @@
         "@type": "File",
         "name": "FASTA formatted contig sequences",
         "contentSize": 245920920,
-        "encodingFormat": "text/plain",
+        "encodingFormat": "text/x-fasta",
         "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/80/4c026fd95c5f820a5225e2d538080f",
         "checksum" : "804c026fd95c5f820a5225e2d538080f",
         "description": "These are the assembled contig sequences from the merged reads in FASTA format"       
@@ -222,7 +222,7 @@
         "@type": "File",
         "name": "Run yml file",
         "contentSize": 10233,
-        "encodingFormat": "text/plain",
+        "encodingFormat": "https://www.iana.org/assignments/media-types/application/yaml",
         "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/ff/d2d39f9eeea068cbdb01874ed3839e",
         "checksum" : "ffd2d39f9eeea068cbdb01874ed3839e",
         "description": "Run yml file"       
@@ -310,7 +310,7 @@
                 "@type": "File",
                 "name": "Merged contigs HMM summary",
                 "contentSize": 22681172,
-                "encodingFormat": "application/gzip",
+                "encodingFormat": ["https://www.iana.org/assignments/media-types/text/tab-separated-values", "https://www.iana.org/assignments/media-types/application/gzip"],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/44/b7e05261b4b8d2d97627b087c9ca04",
                 "checksum" : "44b7e05261b4b8d2d97627b087c9ca04",
                 "description": "Merged contigs HMM summary"
@@ -360,7 +360,7 @@
                 "@type": "File",
                 "name": "Merged contigs CDS I5 summary",
                 "contentSize": 3386737593,
-                "encodingFormat": "application/gzip",
+                "encodingFormat": ["https://www.iana.org/assignments/media-types/text/tab-separated-values", "https://www.iana.org/assignments/media-types/application/gzip"],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/3a/5c2744feeb20e0710479b2766eea1c",
                 "checksum" : "3a5c2744feeb20e0710479b2766eea1c",
                 "description": "Merged contigs CDS I5 summary"
@@ -394,7 +394,7 @@
                 "@type": "File",
                 "name": "5_8S.fa.gz",
                 "contentSize": 1438,
-                "encodingFormat": "application/gzip",
+                "encodingFormat": ["text/x-fasta","https://www.iana.org/assignments/media-types/application/gzip"],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/4d/55fcc8186c5cd49ffb6c25e38e5b21",
                 "checksum" : "4d55fcc8186c5cd49ffb6c25e38e5b21",
                 "description": "5_8S.fa.gz"
@@ -404,7 +404,7 @@
                 "@type": "File",
                 "name": "Bacteria_large_SRP.RF01854.fasta.gz",
                 "contentSize": 5710,
-                "encodingFormat": "application/gzip",
+                "encodingFormat": ["text/x-fasta","https://www.iana.org/assignments/media-types/application/gzip"],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/8f/be534e7a081f8e83117c84335ff432",
                 "checksum" : "8fbe534e7a081f8e83117c84335ff432",
                 "description": "FASTA file containing bacteria nucleotide sequences"
@@ -414,7 +414,7 @@
                 "@type": "File",
                 "name": "Bacteria_small_SRP.RF00169.fasta.gz",
                 "contentSize": 8925,
-                "encodingFormat": "application/gzip",
+                "encodingFormat": ["text/x-fasta","https://www.iana.org/assignments/media-types/application/gzip"],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/81/cf1d3f4264b190c7c55ac2e1d78057",
                 "checksum" : "81cf1d3f4264b190c7c55ac2e1d78057",
                 "description": "FASTA file containing bacteria nucleotide sequences"
@@ -424,7 +424,7 @@
                 "@type": "File",
                 "name": "LSU_rRNA_archaea.RF02540.fa.gz",
                 "contentSize": 37360,
-                "encodingFormat": "application/gzip",
+                "encodingFormat": ["text/x-fasta","https://www.iana.org/assignments/media-types/application/gzip"],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/50/a0afe466cb8e91f9de2f93fcdb9a81",
                 "checksum" : "50a0afe466cb8e91f9de2f93fcdb9a81",
                 "description": "LSU ribosomal RNA sequences for Archaea."
@@ -434,7 +434,7 @@
                 "@type": "File",
                 "name": "LSU_rRNA_bacteria.RF02541.fa.gz",
                 "contentSize": 1057020,
-                "encodingFormat": "application/gzip",
+                "encodingFormat": ["text/x-fasta","https://www.iana.org/assignments/media-types/application/gzip"],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/74/b699ffc10d9ef185ff0aff8ca969a2",
                 "checksum" : "74b699ffc10d9ef185ff0aff8ca969a2",
                 "description": "sequence data for bacterial Large Subunit ribosomal RNA (LSU rRNA) molecule"
@@ -444,7 +444,7 @@
                 "@type": "File",
                 "name": "LSU_rRNA_eukarya.RF02543.fa.gz",
                 "contentSize": 33212,
-                "encodingFormat": "application/gzip",
+                "encodingFormat": ["text/x-fasta","https://www.iana.org/assignments/media-types/application/gzip"],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/47/d354bd7c2ac3c8b69b24072def00c8",
                 "checksum" : "47d354bd7c2ac3c8b69b24072def00c8",
                 "description": "sequence data for eukaryotic Large Subunit ribosomal RNA (LSU rRNA) molecule"
@@ -454,7 +454,7 @@
                 "@type": "File",
                 "name": "RNaseP_bact_a.RF00010.fasta.gz",
                 "contentSize": 20987,
-                "encodingFormat": "application/gzip",
+                "encodingFormat": ["text/x-fasta","https://www.iana.org/assignments/media-types/application/gzip"],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/38/d944b88f127b017fd2fe6bb83124cc",
                 "checksum" : "38d944b88f127b017fd2fe6bb83124cc",
                 "description": "sequence data for a specific bacterial RNase P molecule"
@@ -464,7 +464,7 @@
                 "@type": "File",
                 "name": "RNaseP_bact_b.RF00011.fasta.gz",
                 "contentSize": 265,
-                "encodingFormat": "application/gzip",
+                "encodingFormat": ["text/x-fasta","https://www.iana.org/assignments/media-types/application/gzip"],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/c7/0312b1f5f470f67b1335f28571362a",
                 "checksum" : "c70312b1f5f470f67b1335f28571362a",
                 "description": "sequence data for a specific bacterial RNase P molecule"
@@ -474,7 +474,7 @@
                 "@type": "File",
                 "name": "SSU_rRNA_archaea.RF01959.fa.gz",
                 "contentSize": 21989,
-                "encodingFormat": "application/gzip",
+                "encodingFormat": ["text/x-fasta","https://www.iana.org/assignments/media-types/application/gzip"],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/b8/b15defec58a9334898e42195b8df9a",
                 "checksum" : "b8b15defec58a9334898e42195b8df9a",
                 "description": "sequence data for a archaeal Small Subunit ribosomal RNA (SSU rRNA) molecule"
@@ -484,7 +484,7 @@
                 "@type": "File",
                 "name": "SSU_rRNA_bacteria.RF00177.fa.gz",
                 "contentSize": 503588,
-                "encodingFormat": "application/gzip",
+                "encodingFormat": ["text/x-fasta","https://www.iana.org/assignments/media-types/application/gzip"],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/97/f56e18a9a921be977e5f85c4b2bc92",
                 "checksum" : "97f56e18a9a921be977e5f85c4b2bc92",
                 "description": "sequence data for a bacterial Small Subunit ribosomal RNA (SSU rRNA) molecule"
@@ -494,7 +494,7 @@
                 "@type": "File",
                 "name": "SSU_rRNA_eukarya.RF01960.fa.gz",
                 "contentSize": 16157,
-                "encodingFormat": "application/gzip",
+                "encodingFormat": ["text/x-fasta","https://www.iana.org/assignments/media-types/application/gzip"],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/23/5f7828852393b4a47e8e5da982cfd3",
                 "checksum" : "235f7828852393b4a47e8e5da982cfd3",
                 "description": "sequence data for a eukaryotic Small Subunit ribosomal RNA (SSU rRNA) molecule"
@@ -504,7 +504,7 @@
                 "@type": "File",
                 "name": "alpha_tmRNA.RF01849.fasta.gz",
                 "contentSize": 3111,
-                "encodingFormat": "application/gzip",
+                "encodingFormat": ["text/x-fasta","https://www.iana.org/assignments/media-types/application/gzip"],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/3d/80dd5ac845685aaf818c9fc357a63f",
                 "checksum" : "3d80dd5ac845685aaf818c9fc357a63f",
                 "description": "sequence data for an alpha-type transfer-messenger RNA (tmRNA) molecule"
@@ -514,7 +514,7 @@
                 "@type": "File",
                 "name": "cyano_tmRNA.RF01851.fasta.gz",
                 "contentSize": 292,
-                "encodingFormat": "application/gzip",
+                "encodingFormat": ["text/x-fasta","https://www.iana.org/assignments/media-types/application/gzip"],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/b6/aa87be808babd9cfd64dcfc92c236d",
                 "checksum" : "b6aa87be808babd9cfd64dcfc92c236d",
                 "description": "sequence data for a cyanobacterial transfer-messenger RNA (tmRNA) molecule"
@@ -524,7 +524,7 @@
                 "@type": "File",
                 "name": "tRNA-Sec.RF01852.fasta.gz",
                 "contentSize": 4782,
-                "encodingFormat": "application/gzip",
+                "encodingFormat": ["text/x-fasta","https://www.iana.org/assignments/media-types/application/gzip"],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/e5/8470d2d39e034a110cca59f9b52e72",
                 "checksum" : "e58470d2d39e034a110cca59f9b52e72",
                 "description": "sequence data for a specific transfer RNA (tRNA) molecule"
@@ -534,7 +534,7 @@
                 "@type": "File",
                 "name": "tRNA.RF00005.fasta.gz",
                 "contentSize": 228626,
-                "encodingFormat": "application/gzip",
+                "encodingFormat": ["text/x-fasta","https://www.iana.org/assignments/media-types/application/gzip"],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/64/353da098ed424eedd3b718d90920b4",
                 "checksum" : "64353da098ed424eedd3b718d90920b4",
                 "description": " likely contains the sequence data for a transfer RNA (tRNA) molecule"
@@ -544,7 +544,7 @@
                 "@type": "File",
                 "name": "tmRNA.RF00023.fasta.gz",
                 "contentSize": 15697,
-                "encodingFormat": "application/gzip",
+                "encodingFormat": ["text/x-fasta","https://www.iana.org/assignments/media-types/application/gzip"],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/9f/92739109b4931cf28165f2e001faba",
                 "checksum" : "9f92739109b4931cf28165f2e001faba",
                 "description": "sequence data for a transfer-messenger RNA (tmRNA) molecule"
@@ -576,7 +576,7 @@
                 "@type": "File",
                 "name": "DBH.merged_LSU.fasta.mseq.gz",
                 "contentSize": 938244,
-                "encodingFormat": "application/gzip",
+                "encodingFormat": ["text/x-fasta","https://www.iana.org/assignments/media-types/application/vnd.mseq","https://www.iana.org/assignments/media-types/application/gzip"],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/9e/2c7557a52adb4cdbe60329885364c5",
                 "checksum" : "9e2c7557a52adb4cdbe60329885364c5",
                 "description": "LSU sequences used for indentification"
@@ -586,7 +586,7 @@
                 "@type": "File",
                 "name": "DBH.merged_LSU.fasta.mseq.tsv",
                 "contentSize": 73247,
-                "encodingFormat": "text/tab-separated-values",
+                "encodingFormat": ["text/x-fasta", "https://www.iana.org/assignments/media-types/application/vnd.mseq", "https://www.iana.org/assignments/media-types/text/tab-separated-values"],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/fa/634a0f5921e86674c7b376d25aaf88",
                 "checksum" : "fa634a0f5921e86674c7b376d25aaf88",
                 "description": "Tab-separated formatted taxon counts for LSU sequences"
@@ -596,7 +596,7 @@
                 "@type": "File",
                 "name": "DBH.merged_LSU.fasta.mseq.txt",
                 "contentSize": 62945,
-                "encodingFormat": "text/plain",
+                "encodingFormat": ["text/x-fasta", "https://www.iana.org/assignments/media-types/application/vnd.mseq", "text/plain"],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/5e/2ec2e6420b08a775dfb1bed42d1a3d",
                 "checksum" : "5e2ec2e6420b08a775dfb1bed42d1a3d",
                 "description": "Text-based taxon counts for LSU sequences"
@@ -650,7 +650,7 @@
             "@type": "File",
             "name": "DBH.merged_SSU.fasta.mseq.gz",
             "contentSize": 447886,
-            "encodingFormat": "application/gzip",
+            "encodingFormat": ["text/x-fasta", "https://www.iana.org/assignments/media-types/application/vnd.mseq", "https://www.iana.org/assignments/media-types/application/gzip"],
             "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/8e/50cb556e6a355ba8ca6b4e0f1217ca",
             "checksum" : "8e50cb556e6a355ba8ca6b4e0f1217ca",
             "description": "SSU sequences used for identification"
@@ -660,7 +660,7 @@
             "@type": "File",
             "name": "DBH.merged_SSU.fasta.mseq.tsv",
             "contentSize": 52416,
-            "encodingFormat": "text/tab-separated-values",
+            "encodingFormat": ["text/x-fasta", "https://www.iana.org/assignments/media-types/application/vnd.mseq", "https://www.iana.org/assignments/media-types/text/tab-separated-values"],
             "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/f4/1d301b9561df74b4d6cd8bfdb86d8d",
             "checksum" : "f41d301b9561df74b4d6cd8bfdb86d8d",
             "description": "Tab-separated formatted taxon counts for SSU sequences"
@@ -670,7 +670,7 @@
             "@type": "File",
             "name": "DBH.merged_SSU.fasta.mseq.txt",
             "contentSize": 44530,
-            "encodingFormat": "text/plain",
+            "encodingFormat": ["text/x-fasta", "https://www.iana.org/assignments/media-types/application/vnd.mseq", "text/plain"],
             "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/60/b7fa265b01097b333487233a352130",
             "checksum" : "60b7fa265b01097b333487233a352130",
             "description": "Text-based formatted taxon counts for SSU sequences"
