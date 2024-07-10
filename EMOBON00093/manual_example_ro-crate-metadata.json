@@ -1,6 +1,7 @@
 { "@context": {
     "@base":"https://github.com/emo-bon/",
-    "@vocab":"https://w3id.org/ro/crate/1.2-DRAFT/context"
+    "@vocab":"https://w3id.org/ro/crate/1.2-DRAFT/context",
+    "checksum": "https://spdx.org/rdf/terms/#d4e2091"
 },
   "@graph": [
     {
