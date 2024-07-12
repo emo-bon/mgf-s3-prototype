@@ -24,6 +24,22 @@
         "@type": "CreateAction",
         "name": "EMOBON00092 MetaGoFlow sequence data execution",
         "description": "MetaGoFlow sequence data execution for sample EMOBON00092",
+        "agent": {
+            "@type": "Organization",
+            "@id":"{identifier of the organization responsible for this CreateAction}",
+            "name":"{name of the organization responsible for this CreateAction}",
+            "email":"{email of the organization responsible for this CreateAction}"
+        },
+        "instrument": [
+            {
+                "@type": "SoftwareApplication",
+                "@id":"{identifier of the software used with this CreateAction & please add additional properties that are applicable from https://schema.org/SoftwareApplication}"
+            },
+            {
+                "@type": "SoftwareApplication",
+                "@id":"{identifier of the software used with this CreateAction & please add additional properties that are applicable from https://schema.org/SoftwareApplication}"
+            }
+        ],
         "object": [
             {
                 "@id": "https://github.com/emo-bon/observatory-rformosa-crate/blob/main/logsheets/transformed/sediment_measured.csv"
