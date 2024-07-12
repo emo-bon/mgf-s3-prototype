@@ -1,6 +1,7 @@
 { "@context": {
-    "@base":"https://github.com/emo-bon/",
-    "@vocab":"https://w3id.org/ro/crate/1.2-DRAFT/context"
+    "@base": "https://github.com/emo-bon/",
+    "@vocab": "https://w3id.org/ro/crate/1.2-DRAFT/context",
+    "CPMProvenanceFile": "https://w3id.org/cpm/ro-crate#CPMProvenanceFile"
 },
   "@graph": [
     {

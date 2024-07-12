@@ -1,8 +1,9 @@
 { "@context": {
-    "@base":"https://data.emobon.embrc.eu/mgf-s3-prototype/EMOBON00093/",
-    "@vocab":"https://w3id.org/ro/crate/1.2-DRAFT/context",
+    "@base": "https://data.emobon.embrc.eu/mgf-s3-prototype/EMOBON00093/",
+    "@vocab": "https://w3id.org/ro/crate/1.2-DRAFT/context",
     "checksum": "http://spdx.org/rdf/terms#checksum",
-    "checksumValue":"http://spdx.org/rdf/terms#checksumValue"
+    "checksumValue": "http://spdx.org/rdf/terms#checksumValue",
+    "CPMProvenanceFile": "https://w3id.org/cpm/ro-crate#CPMProvenanceFile"
 },
   "@graph": [
     {
