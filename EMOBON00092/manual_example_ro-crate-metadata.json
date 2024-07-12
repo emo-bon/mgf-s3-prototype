@@ -3,6 +3,8 @@
     "@vocab": "https://w3id.org/ro/crate/1.2-DRAFT/context",
     "checksum": "http://spdx.org/rdf/terms#checksum",
     "checksumValue": "http://spdx.org/rdf/terms#checksumValue",
+    "algorithm": "http://spdx.org/rdf/terms#algorithm",
+    "checksumAlgorithm_md5": "http://spdx.org/rdf/terms#checksumAlgorithm_md5",
     "CPMProvenanceFile": "https://w3id.org/cpm/ro-crate#CPMProvenanceFile"
 }, 
   "@graph": [
@@ -36,11 +38,11 @@
     {
         "@id": "./", 
         "@type": "File",
-        "name" : "MetaGoFlow sequence data results for sample EMOBON00092",                       
-        "description" : "RO-Crate for the MetaGOflow analysis EMO BON ENA Accession not_uploaded_yet data",
-        "datePublished": "not published yet",                                              
+        "name": "MetaGoFlow sequence data results for sample EMOBON00092",                       
+        "description": "RO-Crate for the MetaGOflow analysis EMO BON ENA Accession not_uploaded_yet data",
+        "datePublished": "not published yet",
         "license": {"@id": "Creative Commons (CC-BY 4.0)"},                      
-        "publisher": {"@id": "https://ror.org/0038zss60"},                          
+        "publisher": {"@id": "https://ror.org/0038zss60"},
         "hasPart": [
                         {"@id": "./DBH.merged.cmsearch.all.tblout.deoverlapped"},
                         {"@id": "./DBH.merged.fasta"},
@@ -81,8 +83,9 @@
         "contentSize": 7751834,
         "encodingFormat": "text/plain",
         "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/22/053538759fa3b405533e20c0cf6322",
-        "checksum" : {
-            "checksumValue":"22053538759fa3b405533e20c0cf6322"
+        "checksum": {
+            "checksumValue":"22053538759fa3b405533e20c0cf6322",
+            "algorithm": "checksumAlgorithm_md5"
         },
         "description": "Sequence hits against covariance model databases. Mandatory to run partially the functional annotation step of metaGOflow"
     },
@@ -93,8 +96,9 @@
         "contentSize": 7477104308,
         "encodingFormat": "text/x-fasta",
         "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/85/1bd7b6823e28f20d552f99fc3ce2cb",
-        "checksum" : {
-            "checksumValue":"851bd7b6823e28f20d552f99fc3ce2cb"
+        "checksum": {
+            "checksumValue":"851bd7b6823e28f20d552f99fc3ce2cb",
+            "algorithm": "checksumAlgorithm_md5"
         },
         "description": "Merged filtered reads"
     },
@@ -105,8 +109,9 @@
         "contentSize": 1091,
         "encodingFormat": {"@id":"https://www.iana.org/assignments/media-types/text/tab-separated-values"},
         "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/86/da0a637a532316a03536bce851764e",
-        "checksum" : {
-            "checksumValue":"86da0a637a532316a03536bce851764e"
+        "checksum": {
+            "checksumValue":"86da0a637a532316a03536bce851764e",
+            "algorithm": "checksumAlgorithm_md5"
         },
         "description": "Assignment and abundance of mOTUs and refOTUs"
     },
@@ -117,10 +122,11 @@
         "contentSize": 219,
         "encodingFormat": "text/plain",
         "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/1c/7ef2943e5d72d58d835f8ebc2b8a5c",
-        "checksum" : {
-            "checksumValue":"1c7ef2943e5d72d58d835f8ebc2b8a5c"
+        "checksum": {
+            "checksumValue":"1c7ef2943e5d72d58d835f8ebc2b8a5c",
+            "algorithm": "checksumAlgorithm_md5"
         },
-        "description": "Summary with statistics of the merged reads"        
+        "description": "Summary with statistics of the merged reads"
     },
     {
         "@id": "./DBH.merged.unfiltered_fasta",
@@ -129,10 +135,11 @@
         "contentSize": 13357740086,
         "encodingFormat": "text/plain",
         "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/a3/bf70ef33ea65d3d8a5d8f0d6f39d95",
-        "checksum" : {
-            "checksumValue":"a3bf70ef33ea65d3d8a5d8f0d6f39d95"
+        "checksum": {
+            "checksumValue":"a3bf70ef33ea65d3d8a5d8f0d6f39d95",
+            "algorithm": "checksumAlgorithm_md5"
         },
-        "description": "Merged unfiltered reads"        
+        "description": "Merged unfiltered reads"
     },
     {
         "@id": "./DBH.merged_CDS.faa",
@@ -141,10 +148,11 @@
         "contentSize": 3558420974,
         "encodingFormat": "text/x-fasta",
         "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/4d/8cdbafc5a3e7fd83b1cb1630d5d0ce",
-        "checksum" : {
-            "checksumValue":"4d8cdbafc5a3e7fd83b1cb1630d5d0ce"
+        "checksum": {
+            "checksumValue":"4d8cdbafc5a3e7fd83b1cb1630d5d0ce",
+            "algorithm": "checksumAlgorithm_md5"
         },
-        "description": "FASTA formatted list of sequences translated to amino acid sequence"        
+        "description": "FASTA formatted list of sequences translated to amino acid sequence"
     },
     {
         "@id": "./DBH.merged_CDS.ffn",
@@ -153,8 +161,9 @@
         "contentSize": 7188356555,
         "encodingFormat": "text/x-fasta",
         "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/0d/7e12f3972d4079b00f77266d3d32fb",
-        "checksum" : {
-            "checksumValue":"0d7e12f3972d4079b00f77266d3d32fb"
+        "checksum": {
+            "checksumValue":"0d7e12f3972d4079b00f77266d3d32fb",
+            "algorithm": "checksumAlgorithm_md5"
         },
         "description": "These are the assembled contig sequences from the merged reads in FASTA format"
     },
@@ -165,8 +174,9 @@
         "contentSize": 3389164643,
         "encodingFormat": "text/x-fasta",
         "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/5c/d89fac220414d326a964b9bbc983c7",
-        "checksum" : {
-            "checksumValue":"5cd89fac220414d326a964b9bbc983c7"
+        "checksum": {
+            "checksumValue":"5cd89fac220414d326a964b9bbc983c7",
+            "algorithm": "checksumAlgorithm_md5"
         },
         "description": "Filtered .fastq file of the single-end reads (forward)"
     },
@@ -177,10 +187,11 @@
         "contentSize": 219,
         "encodingFormat": "text/plain",
         "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/25/3da02ca0c445b2fdaa57f9cc7cd1a2",
-        "checksum" : {
-            "checksumValue":"253da02ca0c445b2fdaa57f9cc7cd1a2"
+        "checksum": {
+            "checksumValue":"253da02ca0c445b2fdaa57f9cc7cd1a2",
+            "algorithm": "checksumAlgorithm_md5"
         },
-        "description": "Summary with statistics of the single-end reads (forward)"        
+        "description": "Summary with statistics of the single-end reads (forward)"
     },
     {
         "@id": "./DBH_2_clean.fastq.trimmed.fasta",
@@ -189,8 +200,9 @@
         "contentSize": 3386598384,
         "encodingFormat": "text/x-fasta",
         "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/46/ab4780f515efebaf20c4526ed6d1c0",
-        "checksum" : {
-            "checksumValue":"46ab4780f515efebaf20c4526ed6d1c0"
+        "checksum": {
+            "checksumValue":"46ab4780f515efebaf20c4526ed6d1c0",
+            "algorithm": "checksumAlgorithm_md5"
         },
         "description": "Filtered .fastq file of the single-end reads (reverse)"
     },
@@ -201,10 +213,11 @@
         "contentSize": 219,
         "encodingFormat": "text/plain",
         "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/25/3da02ca0c445b2fdaa57f9cc7cd1a2",
-        "checksum" : {
-            "checksumValue":"253da02ca0c445b2fdaa57f9cc7cd1a2"
+        "checksum": {
+            "checksumValue":"253da02ca0c445b2fdaa57f9cc7cd1a2",
+            "algorithm": "checksumAlgorithm_md5"
         },
-        "description": "Summary with statistics of the single-end reads (reverse)."        
+        "description": "Summary with statistics of the single-end reads (reverse)."
     },
     {
         "@id": "./RNA-counts",
@@ -213,10 +226,11 @@
         "contentSize": 31,
         "encodingFormat": "text/plain",
         "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/0f/a0ae9ed041d953f8f772fc71955ea4",
-        "checksum" : {
-            "checksumValue":"0fa0ae9ed041d953f8f772fc71955ea4"
+        "checksum": {
+            "checksumValue":"0fa0ae9ed041d953f8f772fc71955ea4",
+            "algorithm": "checksumAlgorithm_md5"
         },
-        "description": "numbers of RNA's counted"        
+        "description": "numbers of RNA's counted"
     },
     {
         "@id": "./fastp.html",
@@ -225,10 +239,11 @@
         "contentSize": 386250,
         "encodingFormat": "text/html",
         "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/9d/a3b27edc6dcc318e666e52fe67dabb",
-        "checksum" : {
-            "checksumValue":"9da3b27edc6dcc318e666e52fe67dabb"
+        "checksum": {
+            "checksumValue":"9da3b27edc6dcc318e666e52fe67dabb",
+            "algorithm": "checksumAlgorithm_md5"
         },
-        "description": "Quality control and preprocessing of FASTQ files"        
+        "description": "Quality control and preprocessing of FASTQ files"
     },
     {
         "@id": "./final.contigs.fa",
@@ -237,10 +252,11 @@
         "contentSize": 245920920,
         "encodingFormat": "text/x-fasta",
         "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/80/4c026fd95c5f820a5225e2d538080f",
-        "checksum" : {
-            "checksumValue":"804c026fd95c5f820a5225e2d538080f"
+        "checksum": {
+            "checksumValue":"804c026fd95c5f820a5225e2d538080f",
+            "algorithm": "checksumAlgorithm_md5"
         },
-        "description": "These are the assembled contig sequences from the merged reads in FASTA format"       
+        "description": "These are the assembled contig sequences from the merged reads in FASTA format"
     },
     {
         "@id": "./run.yml",
@@ -249,10 +265,11 @@
         "contentSize": 10233,
         "encodingFormat": {"@id":"https://www.iana.org/assignments/media-types/application/yaml"},
         "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/ff/d2d39f9eeea068cbdb01874ed3839e",
-        "checksum" : {
-            "checksumValue":"ffd2d39f9eeea068cbdb01874ed3839e"
+        "checksum": {
+            "checksumValue":"ffd2d39f9eeea068cbdb01874ed3839e",
+            "algorithm": "checksumAlgorithm_md5"
         },
-        "description": "Run yml file"       
+        "description": "Run yml file"
     },
     {
         "@id": "./functional-annotation",
@@ -289,8 +306,9 @@
                     "contentSize": 88,
                     "encodingFormat": "text/plain",
                     "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/00/7e4908d2342705ffe5f62ce112fe11",
-                    "checksum" : {
-                        "checksumValue":"007e4908d2342705ffe5f62ce112fe11"
+                    "checksum": {
+                        "checksumValue":"007e4908d2342705ffe5f62ce112fe11",
+                        "algorithm": "checksumAlgorithm_md5"
                     },
                     "description": "Geno Ontology summary statistics"
                 },
@@ -301,8 +319,9 @@
                     "contentSize": 118,
                     "encodingFormat": "text/plain",
                     "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/ea/16e00e05a35c3c5dde1d1c7e94923f",
-                    "checksum" : {
-                        "checksumValue":"ea16e00e05a35c3c5dde1d1c7e94923f"
+                    "checksum": {
+                        "checksumValue":"ea16e00e05a35c3c5dde1d1c7e94923f",
+                        "algorithm": "checksumAlgorithm_md5"
                     },
                     "description": "InterProScan summary statistics"
                 },
@@ -313,8 +332,9 @@
                     "contentSize": 85,
                     "encodingFormat": "text/plain",
                     "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/11/7cfa0b95964f5cd0581f3dd7009610",
-                    "checksum" : {
-                        "checksumValue":"117cfa0b95964f5cd0581f3dd7009610"
+                    "checksum": {
+                        "checksumValue":"117cfa0b95964f5cd0581f3dd7009610",
+                        "algorithm": "checksumAlgorithm_md5"
                     },
                     "description": "Kegg Ontology summary statistics"
                 },
@@ -325,8 +345,9 @@
                     "contentSize": 88,
                     "encodingFormat": "text/plain",
                     "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/44/78c1b5586c64e5a1aa5cb6fad66db4",
-                    "checksum" : {
-                        "checksumValue":"4478c1b5586c64e5a1aa5cb6fad66db4"
+                    "checksum": {
+                        "checksumValue":"4478c1b5586c64e5a1aa5cb6fad66db4",
+                        "algorithm": "checksumAlgorithm_md5"
                     },
                     "description": "ORF summary statistics"
                  },
@@ -337,10 +358,11 @@
                     "contentSize": 94,
                     "encodingFormat": "text/plain",
                     "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/dc/be2ee931f92e70ba34ecd4c91b9b43",
-                    "checksum" : {
-                        "checksumValue":"dcbe2ee931f92e70ba34ecd4c91b9b43"
+                    "checksum": {
+                        "checksumValue":"dcbe2ee931f92e70ba34ecd4c91b9b43",
+                        "algorithm": "checksumAlgorithm_md5"
                     },
-                    "description": "Pfam summary statistcs"                 
+                    "description": "Pfam summary statistcs"
                  },
             {
                 "@id": "./functional-annotation/DBH.merged.hmm.tsv.gz",
@@ -352,8 +374,9 @@
                     {"@id":"https://www.iana.org/assignments/media-types/application/gzip"}
                 ],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/44/b7e05261b4b8d2d97627b087c9ca04",
-                "checksum" : {
-                    "checksumValue":"44b7e05261b4b8d2d97627b087c9ca04"
+                "checksum": {
+                    "checksumValue":"44b7e05261b4b8d2d97627b087c9ca04",
+                    "algorithm": "checksumAlgorithm_md5"
                 },
                 "description": "Merged contigs HMM summary"
             },
@@ -364,8 +387,9 @@
                 "contentSize": 151692,
                 "encodingFormat": "text/plain",
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/85/4dedde0f2f2f24a08f94697b54e811",
-                "checksum" : {
-                    "checksumValue":"854dedde0f2f2f24a08f94697b54e811"
+                "checksum": {
+                    "checksumValue":"854dedde0f2f2f24a08f94697b54e811",
+                    "algorithm": "checksumAlgorithm_md5"
                 },
                 "description": "Merged contigs GO summary"
             },
@@ -376,8 +400,9 @@
                 "contentSize": 623412,
                 "encodingFormat": "text/plain",
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/d3/b26b20e7b58763a7ec7aa646d229f6",
-                "checksum" : {
-                    "checksumValue":"d3b26b20e7b58763a7ec7aa646d229f6"
+                "checksum": {
+                    "checksumValue":"d3b26b20e7b58763a7ec7aa646d229f6",
+                    "algorithm": "checksumAlgorithm_md5"
                 },
                 "description": "Merged contigs InterProScan"
             },
@@ -388,8 +413,9 @@
                 "contentSize": 129598,
                 "encodingFormat": "text/plain",
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/e5/8d2f5c84a3599cbd216587f3b0e14d",
-                "checksum" : {
-                    "checksumValue":"e58d2f5c84a3599cbd216587f3b0e14d"
+                "checksum": {
+                    "checksumValue":"e58d2f5c84a3599cbd216587f3b0e14d",
+                    "algorithm": "checksumAlgorithm_md5"
                 },
                 "description": "Merged contigs KO summary"
             },
@@ -400,8 +426,9 @@
                 "contentSize": 531321,
                 "encodingFormat": "text/plain",
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/62/e0cf1b81632a3996a4e91709155da2",
-                "checksum" : {
-                    "checksumValue":"62e0cf1b81632a3996a4e91709155da2"
+                "checksum": {
+                    "checksumValue":"62e0cf1b81632a3996a4e91709155da2",
+                    "algorithm": "checksumAlgorithm_md5"
                 },
                 "description": "Merged contigs PFAM summary"
             },
@@ -415,8 +442,9 @@
                     {"@id":"https://www.iana.org/assignments/media-types/application/gzip"}
                 ],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/3a/5c2744feeb20e0710479b2766eea1c",
-                "checksum" : {
-                    "checksumValue":"3a5c2744feeb20e0710479b2766eea1c"
+                "checksum": {
+                    "checksumValue":"3a5c2744feeb20e0710479b2766eea1c",
+                    "algorithm": "checksumAlgorithm_md5"
                 },
                 "description": "Merged contigs CDS I5 summary"
             },
@@ -454,8 +482,9 @@
                     {"@id":"https://www.iana.org/assignments/media-types/application/gzip"}
                 ],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/4d/55fcc8186c5cd49ffb6c25e38e5b21",
-                "checksum" : {
-                    "checksumValue":"4d55fcc8186c5cd49ffb6c25e38e5b21"
+                "checksum": {
+                    "checksumValue":"4d55fcc8186c5cd49ffb6c25e38e5b21",
+                    "algorithm": "checksumAlgorithm_md5"
                 },
                 "description": "5_8S.fa.gz"
             },
@@ -469,8 +498,9 @@
                     {"@id":"https://www.iana.org/assignments/media-types/application/gzip"}
                 ],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/8f/be534e7a081f8e83117c84335ff432",
-                "checksum" : {
-                    "checksumValue":"8fbe534e7a081f8e83117c84335ff432"
+                "checksum": {
+                    "checksumValue":"8fbe534e7a081f8e83117c84335ff432",
+                    "algorithm": "checksumAlgorithm_md5"
                 },
                 "description": "FASTA file containing bacteria nucleotide sequences"
             },
@@ -484,8 +514,9 @@
                     {"@id":"https://www.iana.org/assignments/media-types/application/gzip"}
                 ],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/81/cf1d3f4264b190c7c55ac2e1d78057",
-                "checksum" : {
-                    "checksumValue":"81cf1d3f4264b190c7c55ac2e1d78057"
+                "checksum": {
+                    "checksumValue":"81cf1d3f4264b190c7c55ac2e1d78057",
+                    "algorithm": "checksumAlgorithm_md5"
                 },
                 "description": "FASTA file containing bacteria nucleotide sequences"
             },
@@ -499,8 +530,9 @@
                     {"@id":"https://www.iana.org/assignments/media-types/application/gzip"}
                 ],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/50/a0afe466cb8e91f9de2f93fcdb9a81",
-                "checksum" : {
-                    "checksumValue":"50a0afe466cb8e91f9de2f93fcdb9a81"
+                "checksum": {
+                    "checksumValue":"50a0afe466cb8e91f9de2f93fcdb9a81",
+                    "algorithm": "checksumAlgorithm_md5"
                 },
                 "description": "LSU ribosomal RNA sequences for Archaea."
             },
@@ -514,8 +546,9 @@
                     {"@id":"https://www.iana.org/assignments/media-types/application/gzip"}
                 ],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/74/b699ffc10d9ef185ff0aff8ca969a2",
-                "checksum" : {
-                    "checksumValue":"74b699ffc10d9ef185ff0aff8ca969a2"
+                "checksum": {
+                    "checksumValue":"74b699ffc10d9ef185ff0aff8ca969a2",
+                    "algorithm": "checksumAlgorithm_md5"
                 },
                 "description": "sequence data for bacterial Large Subunit ribosomal RNA (LSU rRNA) molecule"
             },
@@ -529,8 +562,9 @@
                     {"@id":"https://www.iana.org/assignments/media-types/application/gzip"}
                 ],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/47/d354bd7c2ac3c8b69b24072def00c8",
-                "checksum" : {
-                    "checksumValue":"47d354bd7c2ac3c8b69b24072def00c8"
+                "checksum": {
+                    "checksumValue":"47d354bd7c2ac3c8b69b24072def00c8",
+                    "algorithm": "checksumAlgorithm_md5"
                 },
                 "description": "sequence data for eukaryotic Large Subunit ribosomal RNA (LSU rRNA) molecule"
             },
@@ -544,8 +578,9 @@
                     {"@id":"https://www.iana.org/assignments/media-types/application/gzip"}
                 ],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/38/d944b88f127b017fd2fe6bb83124cc",
-                "checksum" : {
-                    "checksumValue":"38d944b88f127b017fd2fe6bb83124cc"
+                "checksum": {
+                    "checksumValue":"38d944b88f127b017fd2fe6bb83124cc",
+                    "algorithm": "checksumAlgorithm_md5"
                 },
                 "description": "sequence data for a specific bacterial RNase P molecule"
             },
@@ -559,8 +594,9 @@
                     {"@id":"https://www.iana.org/assignments/media-types/application/gzip"}
                 ],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/c7/0312b1f5f470f67b1335f28571362a",
-                "checksum" : {
-                    "checksumValue":"c70312b1f5f470f67b1335f28571362a"
+                "checksum": {
+                    "checksumValue":"c70312b1f5f470f67b1335f28571362a",
+                    "algorithm": "checksumAlgorithm_md5"
                 },
                 "description": "sequence data for a specific bacterial RNase P molecule"
             },
@@ -574,8 +610,9 @@
                     {"@id":"https://www.iana.org/assignments/media-types/application/gzip"}
                 ],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/b8/b15defec58a9334898e42195b8df9a",
-                "checksum" : {
-                    "checksumValue":"b8b15defec58a9334898e42195b8df9a"
+                "checksum": {
+                    "checksumValue":"b8b15defec58a9334898e42195b8df9a",
+                    "algorithm": "checksumAlgorithm_md5"
                 },
                 "description": "sequence data for a archaeal Small Subunit ribosomal RNA (SSU rRNA) molecule"
             },
@@ -589,8 +626,9 @@
                     {"@id":"https://www.iana.org/assignments/media-types/application/gzip"}
                 ],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/97/f56e18a9a921be977e5f85c4b2bc92",
-                "checksum" : {
-                    "checksumValue":"97f56e18a9a921be977e5f85c4b2bc92"
+                "checksum": {
+                    "checksumValue":"97f56e18a9a921be977e5f85c4b2bc92",
+                    "algorithm": "checksumAlgorithm_md5"
                 },
                 "description": "sequence data for a bacterial Small Subunit ribosomal RNA (SSU rRNA) molecule"
             },
@@ -604,8 +642,9 @@
                     {"@id":"https://www.iana.org/assignments/media-types/application/gzip"}
                 ],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/23/5f7828852393b4a47e8e5da982cfd3",
-                "checksum" : {
-                    "checksumValue":"235f7828852393b4a47e8e5da982cfd3"
+                "checksum": {
+                    "checksumValue":"235f7828852393b4a47e8e5da982cfd3",
+                    "algorithm": "checksumAlgorithm_md5"
                 },
                 "description": "sequence data for a eukaryotic Small Subunit ribosomal RNA (SSU rRNA) molecule"
             },
@@ -619,8 +658,9 @@
                     {"@id":"https://www.iana.org/assignments/media-types/application/gzip"}
                 ],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/3d/80dd5ac845685aaf818c9fc357a63f",
-                "checksum" : {
-                    "checksumValue":"3d80dd5ac845685aaf818c9fc357a63f"
+                "checksum": {
+                    "checksumValue":"3d80dd5ac845685aaf818c9fc357a63f",
+                    "algorithm": "checksumAlgorithm_md5"
                 },
                 "description": "sequence data for an alpha-type transfer-messenger RNA (tmRNA) molecule"
             },
@@ -634,8 +674,9 @@
                     {"@id":"https://www.iana.org/assignments/media-types/application/gzip"}
                 ],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/b6/aa87be808babd9cfd64dcfc92c236d",
-                "checksum" : {
-                    "checksumValue":"b6aa87be808babd9cfd64dcfc92c236d"
+                "checksum": {
+                    "checksumValue":"b6aa87be808babd9cfd64dcfc92c236d",
+                    "algorithm": "checksumAlgorithm_md5"
                 },
                 "description": "sequence data for a cyanobacterial transfer-messenger RNA (tmRNA) molecule"
             },
@@ -649,8 +690,9 @@
                     {"@id":"https://www.iana.org/assignments/media-types/application/gzip"}
                 ],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/e5/8470d2d39e034a110cca59f9b52e72",
-                "checksum" : {
-                    "checksumValue":"e58470d2d39e034a110cca59f9b52e72"
+                "checksum": {
+                    "checksumValue":"e58470d2d39e034a110cca59f9b52e72",
+                    "algorithm": "checksumAlgorithm_md5"
                 },
                 "description": "sequence data for a specific transfer RNA (tRNA) molecule"
             },
@@ -664,10 +706,11 @@
                     {"@id":"https://www.iana.org/assignments/media-types/application/gzip"}
                 ],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/64/353da098ed424eedd3b718d90920b4",
-                "checksum" : {
-                    "checksumValue":"64353da098ed424eedd3b718d90920b4"
+                "checksum": {
+                    "checksumValue":"64353da098ed424eedd3b718d90920b4",
+                    "algorithm": "checksumAlgorithm_md5"
                 },
-                "description": " likely contains the sequence data for a transfer RNA (tRNA) molecule"
+                "description": "likely contains the sequence data for a transfer RNA (tRNA) molecule"
             },
             {
                 "@id": "./sequence-categorisation/tmRNA.RF00023.fasta.gz",
@@ -679,8 +722,9 @@
                     {"@id":"https://www.iana.org/assignments/media-types/application/gzip"}
                 ],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/9f/92739109b4931cf28165f2e001faba",
-                "checksum" : {
-                    "checksumValue":"9f92739109b4931cf28165f2e001faba"
+                "checksum": {
+                    "checksumValue":"9f92739109b4931cf28165f2e001faba",
+                    "algorithm": "checksumAlgorithm_md5"
                 },
                 "description": "sequence data for a transfer-messenger RNA (tmRNA) molecule"
             },
@@ -717,8 +761,9 @@
                     {"@id":"https://www.iana.org/assignments/media-types/application/gzip"}
                 ],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/9e/2c7557a52adb4cdbe60329885364c5",
-                "checksum" : {
-                    "checksumValue":"9e2c7557a52adb4cdbe60329885364c5"
+                "checksum": {
+                    "checksumValue":"9e2c7557a52adb4cdbe60329885364c5",
+                    "algorithm": "checksumAlgorithm_md5"
                 },
                 "description": "LSU sequences used for indentification"
             },
@@ -733,8 +778,9 @@
                     {"@id":"https://www.iana.org/assignments/media-types/text/tab-separated-values"}
                 ],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/fa/634a0f5921e86674c7b376d25aaf88",
-                "checksum" : {
-                    "checksumValue":"fa634a0f5921e86674c7b376d25aaf88"
+                "checksum": {
+                    "checksumValue":"fa634a0f5921e86674c7b376d25aaf88",
+                    "algorithm": "checksumAlgorithm_md5"
                 },
                 "description": "Tab-separated formatted taxon counts for LSU sequences"
             },
@@ -749,8 +795,9 @@
                     "text/plain"
                 ],
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/5e/2ec2e6420b08a775dfb1bed42d1a3d",
-                "checksum" : {
-                    "checksumValue":"5e2ec2e6420b08a775dfb1bed42d1a3d"
+                "checksum": {
+                    "checksumValue":"5e2ec2e6420b08a775dfb1bed42d1a3d",
+                    "algorithm": "checksumAlgorithm_md5"
                 },
                 "description": "Text-based taxon counts for LSU sequences"
             },
@@ -761,8 +808,9 @@
                 "contentSize": 75952,
                 "encodingFormat": {"@id":"https://www.iana.org/assignments/media-types/application/ld+json"},
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/8b/c57248a73e87d21eeecc1dcf2dbbc5",
-                "checksum" : {
-                    "checksumValue":"8bc57248a73e87d21eeecc1dcf2dbbc5"
+                "checksum": {
+                    "checksumValue":"8bc57248a73e87d21eeecc1dcf2dbbc5",
+                    "algorithm": "checksumAlgorithm_md5"
                 },
                 "description": "BIOM formatted hdf5 taxon counts for LSU sequences"
             },
@@ -773,8 +821,9 @@
                 "contentSize": 101695,
                 "encodingFormat": "text/plain",
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/94/c7e1782df0ddb9bc3c881636be6ac9",
-                "checksum" : {
-                    "checksumValue":"94c7e1782df0ddb9bc3c881636be6ac9"
+                "checksum": {
+                    "checksumValue":"94c7e1782df0ddb9bc3c881636be6ac9",
+                    "algorithm": "checksumAlgorithm_md5"
                 },
                 "description": "BIOM formatted taxon counts for LSU sequences"
             },
@@ -785,8 +834,9 @@
                 "contentSize": 334681,
                 "encodingFormat": {"@id":"https://www.iana.org/assignments/media-types/application/xhtml+xml"},
                 "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/5a/6d4a03ff770f78a688e51e48be05fa",
-                "checksum" : {
-                    "checksumValue":"5a6d4a03ff770f78a688e51e48be05fa"
+                "checksum": {
+                    "checksumValue":"5a6d4a03ff770f78a688e51e48be05fa",
+                    "algorithm": "checksumAlgorithm_md5"
                 },
                 "description": "Krona summary of LSU taxonomic inventory"
             },
@@ -815,8 +865,9 @@
                 {"@id":"https://www.iana.org/assignments/media-types/application/gzip"}
             ],
             "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/8e/50cb556e6a355ba8ca6b4e0f1217ca",
-            "checksum" : {
-                "checksumValue":"8e50cb556e6a355ba8ca6b4e0f1217ca"
+            "checksum": {
+                "checksumValue":"8e50cb556e6a355ba8ca6b4e0f1217ca",
+                "algorithm": "checksumAlgorithm_md5"
             },
             "description": "SSU sequences used for identification"
         },
@@ -831,8 +882,9 @@
                 {"@id":"https://www.iana.org/assignments/media-types/text/tab-separated-values"}
             ],
             "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/f4/1d301b9561df74b4d6cd8bfdb86d8d",
-            "checksum" : {
-                "checksumValue":"f41d301b9561df74b4d6cd8bfdb86d8d"
+            "checksum": {
+                "checksumValue":"f41d301b9561df74b4d6cd8bfdb86d8d",
+                "algorithm": "checksumAlgorithm_md5"
             },
             "description": "Tab-separated formatted taxon counts for SSU sequences"
         },
@@ -847,8 +899,9 @@
                 "text/plain"
             ],
             "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/60/b7fa265b01097b333487233a352130",
-            "checksum" : {
-                "checksumValue":"60b7fa265b01097b333487233a352130"
+            "checksum": {
+                "checksumValue":"60b7fa265b01097b333487233a352130",
+                "algorithm": "checksumAlgorithm_md5"
             },
             "description": "Text-based formatted taxon counts for SSU sequences"
         },
@@ -859,8 +912,9 @@
             "contentSize": 65712,
             "encodingFormat": {"@id":"https://www.iana.org/assignments/media-types/application/ld+json"},
             "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/1e/12ff35febe67dd50535e99741261ee",
-            "checksum" : {
-                "checksumValue":"1e12ff35febe67dd50535e99741261ee"
+            "checksum": {
+                "checksumValue":"1e12ff35febe67dd50535e99741261ee",
+                "algorithm": "checksumAlgorithm_md5"
             },
             "description": "BIOM formatted hdf5 taxon counts for SSU sequences"
         },
@@ -871,8 +925,9 @@
             "contentSize": 72976,
             "encodingFormat": "text/plain",
             "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/d9/3bbe09f255dac252c4b65076403882",
-            "checksum" : {
-                "checksumValue":"d93bbe09f255dac252c4b65076403882"
+            "checksum": {
+                "checksumValue":"d93bbe09f255dac252c4b65076403882",
+                "algorithm": "checksumAlgorithm_md5"
             },
             "description": "BIOM formatted taxon counts for SSU sequences"
         },
@@ -883,8 +938,9 @@
             "contentSize": 308748,
             "encodingFormat": {"@id":"https://www.iana.org/assignments/media-types/application/xhtml+xml"},
             "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/ed/2353b45859bd3479eb2e3846c9cd8b",
-            "checksum" : {
-                "checksumValue":"ed2353b45859bd3479eb2e3846c9cd8b"
+            "checksum": {
+                "checksumValue":"ed2353b45859bd3479eb2e3846c9cd8b",
+                "algorithm": "checksumAlgorithm_md5"
             },
             "description": "Krona summary of SSU taxonomic inventory"
         }
