@@ -1,0 +1,64 @@
+{ "@context": {
+    "@base":"https://github.com/emo-bon/",
+    "@vocab":"https://w3id.org/ro/crate/1.2-DRAFT/context"
+},
+  "@graph": [
+    {
+        "@id": "mgf-s3-prototype/blob/main/EMOBON00092/provenance.json",
+        "@type": ["File", "CPMProvenanceFile"],
+        "conformsTo": {"@id": "https://by-covid.github.io/cpm-ro-crate/0.2/"},
+        "encodingFormat": "application/ld+json",
+        "name": "EMOBON00092 Provenanace CPM File",
+        "description": "CPM compliant provenance file for EMOBON00092",
+        "about": [
+            {"@id": "_:EMOBON00092-CPM-provgen"}
+        ]
+    },
+    {   "@id": "http://www.w3.org/TR/2013/REC-prov-o-20130430/",
+        "@type": "CreativeWork",
+        "name": "PROV-O format"
+    },
+    {
+        "@id": "_:EMOBON00092-CPM-provgen",
+        "@type": "CreateAction",
+        "name": "EMOBON00092 MetaGoFlow sequence data execution",
+        "description": "MetaGoFlow sequence data execution for sample EMOBON00092",
+        "object": [
+            {
+                "@id": "https://github.com/emo-bon/observatory-rformosa-crate/blob/main/logsheets/transformed/sediment_measured.csv"
+            },
+            {
+                "@id": "https://github.com/emo-bon/observatory-rformosa-crate/blob/main/logsheets/transformed/sediment_observatory.csv"
+            },
+            {
+                "@id": "https://github.com/emo-bon/observatory-rformosa-crate/blob/main/logsheets/transformed/sediment_sampling.csv"
+            }
+        ],
+        "result": [
+            {
+                "@id": "./",
+                "@type": "File",
+                "name" : "MetaGoFlow sequence data results for sample EMOBON00092"
+            }
+        ]
+    },
+    {
+        "@id": "observatory-rformosa-crate/blob/main/logsheets/transformed/sediment_measured.csv",
+        "@type": "File",
+        "name": "EMOBON_RFormosa_So_210805_micro_1",
+        "description": "Environmental metadata."
+    },
+    {
+        "@id": "observatory-rformosa-crate/blob/main/logsheets/transformed/sediment_observatory.csv",
+        "@type": "File",
+        "name": "EMOBON_RFormosa_So_210805_micro_1",
+        "description": "Information about the station."
+    },
+    {
+        "@id": "observatory-rformosa-crate/blob/main/logsheets/transformed/sediment_sampling.csv",
+        "@type": "File",
+        "name": "EMOBON_RFormosa_So_210805_micro_1",
+        "description": "Information about the sampling procedure."
+    }
+]
+}

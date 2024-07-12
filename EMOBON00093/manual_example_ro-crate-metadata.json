@@ -1,9 +1,14 @@
-{ "@context": "https://w3id.org/ro/crate/1.1/context", 
+{ "@context": {
+    "@base":"https://data.emobon.embrc.eu/mgf-s3-prototype/EMOBON00093/",
+    "@vocab":"https://w3id.org/ro/crate/1.2-DRAFT/context",
+    "checksum": "http://spdx.org/rdf/terms#checksum",
+    "checksumValue":"http://spdx.org/rdf/terms#checksumValue"
+},
   "@graph": [
     {
         "@type": "CreativeWork",
         "@id": "ro-crate-metadata.json",
-        "conformsTo": {"@id": "https://w3id.org/ro/crate/1.1"},
+        "conformsTo": {"@id": "https://w3id.org/ro/crate/1.2-DRAFT"},
         "about": {"@id": "./"}
     },
     {
@@ -27,24 +32,7 @@
         "identifier": "https://creativecommons.org/licenses/by/4.0/legalcode",
         "name": "Creative Commons (CC-BY 4.0)"
     },
-    {
-        "@id": "https://github.com/emo-bon/observatory-rformosa-crate/blob/main/logsheets/transformed/sediment_measured.csv",
-        "@type": "File",
-        "name": "EMOBON_RFormosa_So_210805_micro_2",
-        "description": "Environmental metadata."
-    },
-    {
-        "@id": "https://github.com/emo-bon/observatory-rformosa-crate/blob/main/logsheets/transformed/sediment_observatory.csv",
-        "@type": "File",
-        "name": "EMOBON_RFormosa_So_210805_micro_2",
-        "description": "Information about the station."
-    },
-    {
-        "@id": "https://github.com/emo-bon/observatory-rformosa-crate/blob/main/logsheets/transformed/sediment_sampling.csv",
-        "@type": "File",
-        "name": "EMOBON_RFormosa_So_210805_micro_2",
-        "description": "Information about the sampling procedure."
-    },
+
     {
         "@id": "./", 
         "@type": "File",
@@ -54,663 +42,785 @@
         "license": {"@id": "Creative Commons (CC-BY 4.0)"},                      
         "publisher": {"@id": "https://ror.org/0038zss60"},                          
         "hasPart": [
-                        {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/DBH.merged.cmsearch.all.tblout.deoverlapped.dvc"},
-                        {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/DBH.merged.fasta.dvc"},
-                        {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/DBH.merged.motus.tsv.dvc"},
-                        {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/DBH.merged.qc_summary.dvc"},
-                        {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/DBH.merged.unfiltered_fasta.dvc"},
-                        {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/DBH.merged_CDS.faa.dvc"},
-                        {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/DBH.merged_CDS.ffn.dvc"},
-                        {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/DBH_1_clean.fastq.trimmed.fasta.dvc"},
-                        {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/DBH_1_clean.fastq.trimmed.qc_summary.dvc"},
-                        {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/DBH_2_clean.fastq.trimmed.fasta.dvc"},
-                        {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/DBH_2_clean.fastq.trimmed.qc_summary.dvc"},
-                        {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/RNA-counts.dvc"},
-                        {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/config.yml.dvc"},
-                        {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/fastp.html.dvc"},
-                        {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/final.contigs.fa.dvc"},
-                        {"@id": "functional-annotation"},
-                        {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/run.yml.dvc"},
-                        {"@id": "sequence-categorisation"},
-                        {"@id": "taxonomy-summary"}
+                        {"@id": "./DBH.merged.cmsearch.all.tblout.deoverlapped"},
+                        {"@id": "./DBH.merged.fasta"},
+                        {"@id": "./DBH.merged.motus.tsv"},
+                        {"@id": "./DBH.merged.qc_summary"},
+                        {"@id": "./DBH.merged.unfiltered_fasta"},
+                        {"@id": "./DBH.merged_CDS.faa"},
+                        {"@id": "./DBH.merged_CDS.ffn"},
+                        {"@id": "./DBH_1_clean.fastq.trimmed.fasta"},
+                        {"@id": "./DBH_1_clean.fastq.trimmed.qc_summary"},
+                        {"@id": "./DBH_2_clean.fastq.trimmed.fasta"},
+                        {"@id": "./DBH_2_clean.fastq.trimmed.qc_summary"},
+                        {"@id": "./RNA-counts"},
+                        {"@id": "./config.yml"},
+                        {"@id": "./fastp.html"},
+                        {"@id": "./final.contigs.fa"},
+                        {"@id": "./functional-annotation"},
+                        {"@id": "./run.yml"},
+                        {"@id": "./sequence-categorisation"},
+                        {"@id": "./taxonomy-summary"},
+                        {"@id": "./provenance.json"}
                     ] 
     },
     {
-        "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/DBH.merged.cmsearch.all.tblout.deoverlapped.dvc",
+        "@id": "./provenance.json",
+        "@type": ["File", "CPMProvenanceFile"],
+        "conformsTo": {"@id": "https://by-covid.github.io/cpm-ro-crate/0.2/"},
+        "encodingFormat": "application/ld+json",
+        "name": "EMOBON00093 Provenanace CPM File",
+        "description": "CPM compliant provenance file for EMOBON00093",
+        "about": [
+            {"@id": "_:EMOBON00093-CPM-provgen"}
+        ]
+    },
+    {
+        "@id": "./DBH.merged.cmsearch.all.tblout.deoverlapped",
         "@type": "File",
         "name": "Sequences hits list",
         "contentSize": 7855217,
         "encodingFormat": "text/plain",
-        "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/2b/f95636c4a5ce88dcc699509c455067",
-        "checksum" : "2bf95636c4a5ce88dcc699509c455067",
+        "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/2b/f95636c4a5ce88dcc699509c455067",
+        "checksum" : {
+            "checksumValue":"2bf95636c4a5ce88dcc699509c455067"
+        },
         "description": "Sequence hits against covariance model databases. Mandatory to run partially the functional annotation step of metaGOflow"
     },
     {
-        "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/DBH.merged.fasta.dvc",
+        "@id": "./DBH.merged.fasta",
         "@type": "File",
         "name": "Merged filtered reads",
         "contentSize": 6304783433,
-        "encodingFormat": "text/plain",
-        "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/a1/f618b884a6f8a21118016fd754050a",
-        "checksum" : "a1f618b884a6f8a21118016fd754050a",
+        "encodingFormat": "text/x-fasta",
+        "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/a1/f618b884a6f8a21118016fd754050a",
+        "checksum" : {
+            "checksumValue":"a1f618b884a6f8a21118016fd754050a"
+        },
         "description": "Merged filtered reads"
     },
     {
-        "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/DBH.merged.motus.tsv.dvc",
+        "@id": "./DBH.merged.motus.tsv",
         "@type": "File",
         "name": "motus list",
         "contentSize": 262,
-        "encodingFormat": "text/tab-separated-values",
-        "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/7f/55bed89a5e17e1f53ba00c9ca28f74",
-        "checksum" : "7f55bed89a5e17e1f53ba00c9ca28f74",
+        "encodingFormat": "https://www.iana.org/assignments/media-types/text/tab-separated-values",
+        "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/7f/55bed89a5e17e1f53ba00c9ca28f74",
+        "checksum" : {
+            "checksumValue":"7f55bed89a5e17e1f53ba00c9ca28f74"
+        },
         "description": "Assignment and abundance of mOTUs and refOTUs"
     },
     {
-        "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/DBH.merged.qc_summary.dvc",
+        "@id": "./DBH.merged.qc_summary",
         "@type": "File",
         "name": "Stats of merging",
         "contentSize": 219,
         "encodingFormat": "text/plain",
-        "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/8c/12891fcaf5edb77d730f904af9bdb7",
-        "checksum" : "8c12891fcaf5edb77d730f904af9bdb7",
+        "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/8c/12891fcaf5edb77d730f904af9bdb7",
+        "checksum" : {
+            "checksumValue":"8c12891fcaf5edb77d730f904af9bdb7"
+        },
         "description": "Summary with statistics of the merged reads"        
     },
     {
-        "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/DBH.merged.unfiltered_fasta.dvc",
+        "@id": "./DBH.merged.unfiltered_fasta",
         "@type": "File",
         "name": "Merged unfiltered reads",
         "contentSize": 11253236797,
         "encodingFormat": "text/plain",
-        "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/88/c36399ef0dfd7ae27608b042a8b379",
-        "checksum" : "88c36399ef0dfd7ae27608b042a8b379",
+        "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/88/c36399ef0dfd7ae27608b042a8b379",
+        "checksum" : {
+            "checksumValue":"88c36399ef0dfd7ae27608b042a8b379"
+        },
         "description": "Merged unfiltered reads"        
     },
     {
-        "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/DBH.merged_CDS.faa.dvc",
+        "@id": "./DBH.merged_CDS.faa",
         "@type": "File",
         "name": "Gene coding protein sequences (CDS) in FASTA format",
         "contentSize": 2944752462,
-        "encodingFormat": "text/plain",
-        "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/71/25ba6b869d00d0e2027712a641cb1b",
-        "checksum" : "7125ba6b869d00d0e2027712a641cb1b",
+        "encodingFormat": "text/x-fasta",
+        "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/71/25ba6b869d00d0e2027712a641cb1b",
+        "checksum" : {
+            "checksumValue":"7125ba6b869d00d0e2027712a641cb1b"
+        },
         "description": "FASTA formatted list of sequences translated to amino acid sequence"        
     },
     {
-        "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/DBH.merged_CDS.ffn.dvc",
+        "@id": "./DBH.merged_CDS.ffn",
         "@type": "File",
         "name": "Gene coding nucleotide sequences (CDS) in FASTA format",
         "contentSize": 5912560492,
-        "encodingFormat": "text/plain",
-        "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/00/e2d1630b695f4e29a3f7f0a39a1cce",
-        "checksum" : "00e2d1630b695f4e29a3f7f0a39a1cce",
+        "encodingFormat": "text/x-fasta",
+        "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/00/e2d1630b695f4e29a3f7f0a39a1cce",
+        "checksum" : {
+            "checksumValue":"00e2d1630b695f4e29a3f7f0a39a1cce"
+        },
         "description": "These are the assembled contig sequences from the merged reads in FASTA format"
     },
     {
-        "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/DBH_1_clean.fastq.trimmed.fasta.dvc",
+        "@id": "./DBH_1_clean.fastq.trimmed.fasta",
         "@type": "File",
         "name": "FASTQ sequences trimmed - read 1",
         "contentSize": 1932528538,
-        "encodingFormat": "text/plain",
-        "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/66/ee2d59e4b05eefdfb1f8b8be202f1e",
-        "checksum" : "66ee2d59e4b05eefdfb1f8b8be202f1e",
+        "encodingFormat": "text/x-fasta",
+        "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/66/ee2d59e4b05eefdfb1f8b8be202f1e",
+        "checksum" : {
+            "checksumValue":"66ee2d59e4b05eefdfb1f8b8be202f1e"
+        },
         "description": "Filtered .fastq file of the single-end reads (forward)"
     },
     {
-        "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/DBH_1_clean.fastq.trimmed.qc_summary.dvc",
+        "@id": "./DBH_1_clean.fastq.trimmed.qc_summary",
         "@type": "File",
         "name": "filtering report file",
         "contentSize": 219,
         "encodingFormat": "text/plain",
-        "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/25/0f89687c4c7b15d970064a4d73ec58",
-        "checksum" : "250f89687c4c7b15d970064a4d73ec58",
+        "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/25/0f89687c4c7b15d970064a4d73ec58",
+        "checksum" : {
+            "checksumValue":"250f89687c4c7b15d970064a4d73ec58"
+        },
         "description": "Summary with statistics of the single-end reads (forward)"        
     },
     {
-        "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/DBH_2_clean.fastq.trimmed.fasta.dvc",
+        "@id": "./DBH_2_clean.fastq.trimmed.fasta",
         "@type": "File",
         "name": "FASTQ sequences trimmed - read 2",
         "contentSize": 1931917801,
-        "encodingFormat": "text/plain",
-        "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/ca/71a986c1b6bc5eaa45f6fb958b1800",
-        "checksum" : "ca71a986c1b6bc5eaa45f6fb958b1800",
+        "encodingFormat": "text/x-fasta",
+        "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/ca/71a986c1b6bc5eaa45f6fb958b1800",
+        "checksum" : {
+            "checksumValue":"ca71a986c1b6bc5eaa45f6fb958b1800"
+        },
         "description": "Filtered .fastq file of the single-end reads (reverse)"
     },
     {
-        "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/DBH_2_clean.fastq.trimmed.qc_summary.dvc",
+        "@id": "./DBH_2_clean.fastq.trimmed.qc_summary",
         "@type": "File",
         "name": "filtering report file",
         "contentSize": 219,
         "encodingFormat": "text/plain",
-        "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/25/0f89687c4c7b15d970064a4d73ec58",
-        "checksum" : "250f89687c4c7b15d970064a4d73ec58",
+        "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/25/0f89687c4c7b15d970064a4d73ec58",
+        "checksum" : {
+            "checksumValue":"250f89687c4c7b15d970064a4d73ec58"
+        },
         "description": "Summary with statistics of the single-end reads (reverse)."        
     },
     {
-        "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/RNA-counts.dvc",
+        "@id": "./RNA-counts",
         "@type": "File",
         "name": "SSU and LSU count",
         "contentSize": 31,
         "encodingFormat": "text/plain",
-        "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/bb/743d86945a2431cb56d25ffaba3dd2",
-        "checksum" : "bb743d86945a2431cb56d25ffaba3dd2",
+        "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/bb/743d86945a2431cb56d25ffaba3dd2",
+        "checksum" : {
+            "checksumValue":"bb743d86945a2431cb56d25ffaba3dd2"
+        },
         "description": "numbers of RNA's counted"        
     },
     {
-        "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/config.yml.dvc",
+        "@id": "./config.yml",
         "@type": "File",
         "name": "Config yml file",
         "contentSize": 2857,
-        "encodingFormat": "text/html",
-        "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/c5/255fa5a49cee6faf6d464bd3c7d43a",
-        "checksum" : "c5255fa5a49cee6faf6d464bd3c7d43a",
+        "encodingFormat": "https://www.iana.org/assignments/media-types/application/yaml",
+        "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/c5/255fa5a49cee6faf6d464bd3c7d43a",
+        "checksum" : {
+            "checksumValue":"c5255fa5a49cee6faf6d464bd3c7d43a"
+        },
         "description": "Config yml file"        
     },
     {
-        "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/fastp.html.dvc",
+        "@id": "./fastp.html",
         "@type": "File",
         "name": "FASTP analysis of raw sequence data",
         "contentSize": 386191,
         "encodingFormat": "text/html",
-        "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/7c/64f500f04bd0bf1aa7513af0adf4cc",
-        "checksum" : "7c64f500f04bd0bf1aa7513af0adf4cc",
+        "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/7c/64f500f04bd0bf1aa7513af0adf4cc",
+        "checksum" : {
+            "checksumValue":"7c64f500f04bd0bf1aa7513af0adf4cc"
+        },
         "description": "Quality control and preprocessing of FASTQ files"        
     },
     {
-        "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/final.contigs.fa.dvc",
+        "@id": "./final.contigs.fa",
         "@type": "File",
         "name": "FASTA formatted contig sequences",
         "contentSize": 220538023,
-        "encodingFormat": "text/plain",
-        "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/3a/5a027acf8e855116ce305a5d9259c0",
-        "checksum" : "3a5a027acf8e855116ce305a5d9259c0",
+        "encodingFormat": "text/x-fasta",
+        "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/3a/5a027acf8e855116ce305a5d9259c0",
+        "checksum" : {
+            "checksumValue":"3a5a027acf8e855116ce305a5d9259c0"
+        },
         "description": "These are the assembled contig sequences from the merged reads in FASTA format"       
     },
     {
-        "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/run.yml.dvc",
+        "@id": "./run.yml",
         "@type": "File",
         "name": "Run yml file",
         "contentSize": 10233,
-        "encodingFormat": "text/plain",
-        "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/ff/d2d39f9eeea068cbdb01874ed3839e",
-        "checksum" : "ffd2d39f9eeea068cbdb01874ed3839e",
+        "encodingFormat": "https://www.iana.org/assignments/media-types/application/yaml",
+        "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/ff/d2d39f9eeea068cbdb01874ed3839e",
+        "checksum" : {
+            "checksumValue":"ffd2d39f9eeea068cbdb01874ed3839e"
+        },
         "description": "Run yml file"       
     },
     {
-        "@id": "functional_annotation",
+        "@id": "./functional_annotation",
         "@type": "Dataset",
         "name": "Functional annotation results",
         "description": "Functional annotation of merged reads",
         "hasPart": [
-          {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/functional-annotation/DBH.merged.hmm.tsv.gz.dvc"},
-          {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/functional-annotation/DBH.merged.summary.go.dvc"},
-          {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/functional-annotation/DBH.merged.summary.go_slim.dvc"},
-          {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/functional-annotation/DBH.merged.summary.ips.dvc"},
-          {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/functional-annotation/DBH.merged.summary.ko.dvc"},
-          {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/functional-annotation/DBH.merged.summary.pfam.dvc"},
-          {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/functional-annotation/DBH.merged_CDS.I5.tsv.gz.dvc"},
-          {"@id": "stats"}
+          {"@id": "./functional-annotation/DBH.merged.hmm.tsv.gz"},
+          {"@id": "./functional-annotation/DBH.merged.summary.go"},
+          {"@id": "./functional-annotation/DBH.merged.summary.go_slim"},
+          {"@id": "./functional-annotation/DBH.merged.summary.ips"},
+          {"@id": "./functional-annotation/DBH.merged.summary.ko"},
+          {"@id": "./functional-annotation/DBH.merged.summary.pfam"},
+          {"@id": "./functional-annotation/DBH.merged_CDS.I5.tsv.gz"},
+          {"@id": "./functional-annotation/stats"}
         ]
     },
         {
-            "@id": "stats",
+            "@id": "./functional-annotation/stats",
             "@type": "Dataset",
             "name": "Summary statistic for functional annotation",
             "hasPart": [
-                {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/functional-annotation/stats/go.stats.dvc"},
-                {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/functional-annotation/stats/interproscan.stats.dvc"},
-                {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/functional-annotation/stats/ko.stats.dvc"},
-                {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/functional-annotation/stats/orf.stats.dvc"},
-                {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/functional-annotation/stats/pfam.stats.dvc"}
+                {"@id": "./functional-annotation/stats/go.stats"},
+                {"@id": "./functional-annotation/stats/interproscan.stats"},
+                {"@id": "./functional-annotation/stats/ko.stats"},
+                {"@id": "./functional-annotation/stats/orf.stats"},
+                {"@id": "./functional-annotation/stats/pfam.stats"}
                 ]
         },
                 {
-                    "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/functional-annotation/stats/go.stats.dvc",
+                    "@id": "./functional-annotation/stats/go.stats",
                     "@type": "File",
                     "name": "Geno Ontology summary statistics-annotation/stats/go.stats",
                     "contentSize": 88,
                     "encodingFormat": "text/plain",
-                    "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/bb/5a10cd8a16c6fd3e7bd33a720e5949",
-                    "checksum" : "bb5a10cd8a16c6fd3e7bd33a720e5949",
+                    "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/bb/5a10cd8a16c6fd3e7bd33a720e5949",
+                    "checksum" : {
+                        "checksumValue":"bb5a10cd8a16c6fd3e7bd33a720e5949"
+                    },
                     "description": "Geno Ontology summary statistics"
                 },
                 {
-                    "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/functional-annotation/stats/interproscan.stats.dvc",
+                    "@id": "./functional-annotation/stats/interproscan.stats",
                     "@type": "File",
                     "name": "InterProScan summary statistics",
                     "contentSize": 118,
                     "encodingFormat": "text/plain",
-                    "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/ac/db799e67f2b8260fce3196340f384a",
-                    "checksum" : "acdb799e67f2b8260fce3196340f384a",
+                    "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/ac/db799e67f2b8260fce3196340f384a",
+                    "checksum" : {
+                        "checksumValue":"acdb799e67f2b8260fce3196340f384a"
+                    },
                     "description": "InterProScan summary statistics"
                 },
                 {
-                    "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/functional-annotation/stats/ko.stats.dvc",
+                    "@id": "./functional-annotation/stats/ko.stats",
                     "@type": "File",
                     "name": "Kegg Ontology summary statistics",
                     "contentSize": 85,
                     "encodingFormat": "text/plain",
-                    "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/19/627e65214e17c7e73a9b334c01e3dd",
-                    "checksum" : "19627e65214e17c7e73a9b334c01e3dd",
+                    "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/19/627e65214e17c7e73a9b334c01e3dd",
+                    "checksum" : {
+                        "checksumValue":"19627e65214e17c7e73a9b334c01e3dd"
+                    },
                     "description": "Kegg Ontology summary statistics"
                 },
                 {
-                    "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/functional-annotation/stats/orf.stats.dvc",
+                    "@id": "./functional-annotation/stats/orf.stats",
                     "@type": "File",
                     "name": "ORF summary statistics",
                     "contentSize": 88,
                     "encodingFormat": "text/plain",
-                    "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/ef/6d397d289c7f115b08d32768c214eb",
-                    "checksum" : "ef6d397d289c7f115b08d32768c214eb",
+                    "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/ef/6d397d289c7f115b08d32768c214eb",
+                    "checksum" : {
+                        "checksumValue":"ef6d397d289c7f115b08d32768c214eb"
+                    },
                     "description": "ORF summary statistics"
                  },
                  {
-                    "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/functional-annotation/stats/pfam.stats.dvc",
+                    "@id": "./functional-annotation/stats/pfam.stats",
                     "@type": "File",
                     "name": "Pfam summary statistcs",
                     "contentSize": 94,
                     "encodingFormat": "text/plain",
-                    "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/b4/3f00cc0455e70b7a41e6cbff5ae1f5",
-                    "checksum" : "b43f00cc0455e70b7a41e6cbff5ae1f5",
+                    "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/b4/3f00cc0455e70b7a41e6cbff5ae1f5",
+                    "checksum" : {
+                        "checksumValue":"b43f00cc0455e70b7a41e6cbff5ae1f5"
+                    },
                     "description": "Pfam summary statistcs"                 
                  },
             {
-                "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/functional-annotation/DBH.merged.hmm.tsv.gz.dvc",
+                "@id": "./functional-annotation/DBH.merged.hmm.tsv.gz",
                 "@type": "File",
                 "name": "Merged contigs HMM summary",
                 "contentSize": 16787551,
-                "encodingFormat": "application/gzip",
-                "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/7e/cccb65bc11b96ecfdd5dff81adcadf",
-                "checksum" : "7ecccb65bc11b96ecfdd5dff81adcadf",
+                "encodingFormat": ["https://www.iana.org/assignments/media-types/text/tab-separated-values", "https://www.iana.org/assignments/media-types/application/gzip"],
+                "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/7e/cccb65bc11b96ecfdd5dff81adcadf",
+                "checksum" : {
+                    "checksumValue":"7ecccb65bc11b96ecfdd5dff81adcadf"
+                },
                 "description": "Merged contigs HMM summary"
             },
             {
-                "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/functional-annotation/DBH.merged.summary.go.dvc",
+                "@id": "./functional-annotation/DBH.merged.summary.go",
                 "@type": "File",
                 "name": "Merged contigs GO summary",
                 "contentSize": 149935,
                 "encodingFormat": "text/plain",
-                "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/dd/263fdb1d15dfc38f7ac40295a6f799",
-                "checksum" : "dd263fdb1d15dfc38f7ac40295a6f799",
+                "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/dd/263fdb1d15dfc38f7ac40295a6f799",
+                "checksum" : {
+                    "checksumValue":"dd263fdb1d15dfc38f7ac40295a6f799"
+                },
                 "description": "Merged contigs GO summary"
             },
             {
-                "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/functional-annotation/DBH.merged.summary.ips.dvc",
+                "@id": "./functional-annotation/DBH.merged.summary.ips",
                 "@type": "File",
                 "name": "Merged contigs InterProScan",
                 "contentSize": 599575,
                 "encodingFormat": "text/plain",
-                "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/69/b29a74b728d187d3bfed806eb7519d",
-                "checksum" : "69b29a74b728d187d3bfed806eb7519d",
+                "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/69/b29a74b728d187d3bfed806eb7519d",
+                "checksum" : {
+                    "checksumValue":"69b29a74b728d187d3bfed806eb7519d"
+                },
                 "description": "Merged contigs InterProScan"
             },
             {
-                "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/functional-annotation/DBH.merged.summary.ko.dvc",
+                "@id": "./functional-annotation/DBH.merged.summary.ko",
                 "@type": "File",
                 "name": "Merged contigs KO summary",
                 "contentSize": 127053,
                 "encodingFormat": "text/plain",
-                "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/e4/293f663d81c3274963fe2ec4e741f8",
-                "checksum" : "e4293f663d81c3274963fe2ec4e741f8",
+                "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/e4/293f663d81c3274963fe2ec4e741f8",
+                "checksum" : {
+                    "checksumValue":"e4293f663d81c3274963fe2ec4e741f8"
+                },
                 "description": "Merged contigs KO summary"
             },
             {
-                "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/functional-annotation/DBH.merged.summary.pfam.dvc",
+                "@id": "./functional-annotation/DBH.merged.summary.pfam",
                 "@type": "File",
                 "name": "Merged contigs PFAM summary",
                 "contentSize": 510926,
                 "encodingFormat": "text/plain",
-                "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/74/e27e8fcb4cc71c10f9f7d7b4c30d12",
-                "checksum" : "74e27e8fcb4cc71c10f9f7d7b4c30d12",
+                "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/74/e27e8fcb4cc71c10f9f7d7b4c30d12",
+                "checksum" : {
+                    "checksumValue":"74e27e8fcb4cc71c10f9f7d7b4c30d12"
+                },
                 "description": "Merged contigs PFAM summary"
             },
             {
-                "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/functional-annotation/DBH.merged_CDS.I5.tsv.gz.dvc",
+                "@id": "./functional-annotation/DBH.merged_CDS.I5.tsv.gz",
                 "@type": "File",
                 "name": "Merged contigs CDS I5 summary",
                 "contentSize": 2340635561,
-                "encodingFormat": "application/gzip",
-                "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/b9/596ac02634629c7d9f76de7a8f2f5e",
-                "checksum" : "b9596ac02634629c7d9f76de7a8f2f5e",
+                "encodingFormat": ["https://www.iana.org/assignments/media-types/text/tab-separated-values", "https://www.iana.org/assignments/media-types/application/gzip"],
+                "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/b9/596ac02634629c7d9f76de7a8f2f5e",
+                "checksum" : {
+                    "checksumValue":"b9596ac02634629c7d9f76de7a8f2f5e"
+                },
                 "description": "Merged contigs CDS I5 summary"
             },
     {
-        "@id": "sequence-categorisation",
+        "@id": "./sequence-categorisation",
         "@type": "Dataset",
         "name": "Sequence categorisation",
         "description": "Identify specific loci in the sample.",
         "hasPart": [
-            {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/sequence-categorisation/5_8S.fa.gz.dvc"},
-            {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/sequence-categorisation/Bacteria_large_SRP.RF01854.fasta.gz.dvc"},
-            {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/sequence-categorisation/Bacteria_small_SRP.RF00169.fasta.gz.dvc"},
-            {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/sequence-categorisation/LSU_rRNA_archaea.RF02540.fa.gz.dvc"},
-            {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/sequence-categorisation/LSU_rRNA_bacteria.RF02541.fa.gz.dvc"},
-            {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/sequence-categorisation/LSU_rRNA_eukarya.RF02543.fa.gz.dvc"},
-            {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/sequence-categorisation/RNaseP_bact_a.RF00010.fasta.gz.dvc"},
-            {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/sequence-categorisation/RNaseP_bact_b.RF00011.fasta.gz.dvc"},
-            {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/sequence-categorisation/SSU_rRNA_archaea.RF01959.fa.gz.dvc"},
-            {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/sequence-categorisation/SSU_rRNA_bacteria.RF00177.fa.gz.dvc"},
-            {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/sequence-categorisation/SSU_rRNA_eukarya.RF01960.fa.gz.dvc"},
-            {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/sequence-categorisation/alpha_tmRNA.RF01849.fasta.gz.dvc"},
-            {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/sequence-categorisation/cyano_tmRNA.RF01851.fasta.gz.dvc"},
-            {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/sequence-categorisation/tRNA-Sec.RF01852.fasta.gz.dvc"},
-            {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/sequence-categorisation/tRNA.RF00005.fasta.gz.dvc"},
-            {"@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/sequence-categorisation/tmRNA.RF00023.fasta.gz.dvc"}
+            {"@id": "./sequence-categorisation/5_8S.fa.gz"},
+            {"@id": "./sequence-categorisation/Bacteria_large_SRP.RF01854.fasta.gz"},
+            {"@id": "./sequence-categorisation/Bacteria_small_SRP.RF00169.fasta.gz"},
+            {"@id": "./sequence-categorisation/LSU_rRNA_archaea.RF02540.fa.gz"},
+            {"@id": "./sequence-categorisation/LSU_rRNA_bacteria.RF02541.fa.gz"},
+            {"@id": "./sequence-categorisation/LSU_rRNA_eukarya.RF02543.fa.gz"},
+            {"@id": "./sequence-categorisation/RNaseP_bact_a.RF00010.fasta.gz"},
+            {"@id": "./sequence-categorisation/RNaseP_bact_b.RF00011.fasta.gz"},
+            {"@id": "./sequence-categorisation/SSU_rRNA_archaea.RF01959.fa.gz"},
+            {"@id": "./sequence-categorisation/SSU_rRNA_bacteria.RF00177.fa.gz"},
+            {"@id": "./sequence-categorisation/SSU_rRNA_eukarya.RF01960.fa.gz"},
+            {"@id": "./sequence-categorisation/alpha_tmRNA.RF01849.fasta.gz"},
+            {"@id": "./sequence-categorisation/cyano_tmRNA.RF01851.fasta.gz"},
+            {"@id": "./sequence-categorisation/tRNA-Sec.RF01852.fasta.gz"},
+            {"@id": "./sequence-categorisation/tRNA.RF00005.fasta.gz"},
+            {"@id": "./sequence-categorisation/tmRNA.RF00023.fasta.gz"}
             ]
     },
             {
-                "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/sequence-categorisation/5_8S.fa.gz.dvc",
+                "@id": "./sequence-categorisation/5_8S.fa.gz",
                 "@type": "File",
                 "name": "5_8S.fa.gz",
                 "contentSize": 1856,
-                "encodingFormat": "application/gzip",
-                "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/13/cbb6e7471f1719a39f780c1968f450",
-                "checksum" : "13cbb6e7471f1719a39f780c1968f450",
+                "encodingFormat": ["text/x-fasta", "https://www.iana.org/assignments/media-types/application/gzip"],
+                "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/13/cbb6e7471f1719a39f780c1968f450",
+                "checksum" : {
+                    "checksumValue":"13cbb6e7471f1719a39f780c1968f450"
+                },
                 "description": "5_8S.fa.gz"
             },
             {
-                "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/sequence-categorisation/Bacteria_large_SRP.RF01854.fasta.gz.dvc",
+                "@id": "./sequence-categorisation/Bacteria_large_SRP.RF01854.fasta.gz",
                 "@type": "File",
                 "name": "Bacteria_large_SRP.RF01854.fasta.gz",
                 "contentSize": 3788,
-                "encodingFormat": "application/gzip",
-                "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/28/664f9e6772fb457b33b1880acf0037",
-                "checksum" : "28664f9e6772fb457b33b1880acf0037",
+                "encodingFormat": ["text/x-fasta", "https://www.iana.org/assignments/media-types/application/gzip"],
+                "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/28/664f9e6772fb457b33b1880acf0037",
+                "checksum" : {
+                    "checksumValue":"28664f9e6772fb457b33b1880acf0037"
+                },
                 "description": "FASTA file containing bacteria nucleotide sequences"
             },
             {
-                "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/sequence-categorisation/Bacteria_small_SRP.RF00169.fasta.gz.dvc",
+                "@id": "./sequence-categorisation/Bacteria_small_SRP.RF00169.fasta.gz",
                 "@type": "File",
                 "name": "Bacteria_small_SRP.RF00169.fasta.gz",
                 "contentSize": 5480,
-                "encodingFormat": "application/gzip",
-                "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/0f/1d9a33747ca4dbb309e0df99c2a14a",
-                "checksum" : "0f1d9a33747ca4dbb309e0df99c2a14a",
+                "encodingFormat": ["text/x-fasta", "https://www.iana.org/assignments/media-types/application/gzip"],
+                "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/0f/1d9a33747ca4dbb309e0df99c2a14a",
+                "checksum" : {
+                    "checksumValue":"0f1d9a33747ca4dbb309e0df99c2a14a"
+                },
                 "description": "FASTA file containing bacteria nucleotide sequences"
             },
             {
-                "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/sequence-categorisation/LSU_rRNA_archaea.RF02540.fa.gz.dvc",
+                "@id": "./sequence-categorisation/LSU_rRNA_archaea.RF02540.fa.gz",
                 "@type": "File",
                 "name": "LSU_rRNA_archaea.RF02540.fa.gz",
                 "contentSize": 3127,
-                "encodingFormat": "application/gzip",
-                "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/5b/e4ec9d74873a522cd15611d79d8d3f",
-                "checksum" : "5be4ec9d74873a522cd15611d79d8d3f",
+                "encodingFormat": ["text/x-fasta", "https://www.iana.org/assignments/media-types/application/gzip"],
+                "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/5b/e4ec9d74873a522cd15611d79d8d3f",
+                "checksum" : {
+                    "checksumValue":"5be4ec9d74873a522cd15611d79d8d3f"
+                },
                 "description": "LSU ribosomal RNA sequences for Archaea."
             },
             {
-                "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/sequence-categorisation/LSU_rRNA_bacteria.RF02541.fa.gz.dvc",
+                "@id": "./sequence-categorisation/LSU_rRNA_bacteria.RF02541.fa.gz",
                 "@type": "File",
                 "name": "LSU_rRNA_bacteria.RF02541.fa.gz",
                 "contentSize": 1036560,
-                "encodingFormat": "application/gzip",
-                "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/a5/1afbebee8dcb3d86120f9dc75782f8",
-                "checksum" : "a51afbebee8dcb3d86120f9dc75782f8",
+                "encodingFormat": ["text/x-fasta", "https://www.iana.org/assignments/media-types/application/gzip"],
+                "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/a5/1afbebee8dcb3d86120f9dc75782f8",
+                "checksum" : {
+                    "checksumValue":"a51afbebee8dcb3d86120f9dc75782f8"
+                },
                 "description": "sequence data for bacterial Large Subunit ribosomal RNA (LSU rRNA) molecule"
             },
             {
-                "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/sequence-categorisation/LSU_rRNA_eukarya.RF02543.fa.gz.dvc",
+                "@id": "./sequence-categorisation/LSU_rRNA_eukarya.RF02543.fa.gz",
                 "@type": "File",
                 "name": "LSU_rRNA_eukarya.RF02543.fa.gz",
                 "contentSize": 53878,
-                "encodingFormat": "application/gzip",
-                "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/1c/32765287e1b6023b2692950cb84820",
-                "checksum" : "1c32765287e1b6023b2692950cb84820",
+                "encodingFormat": ["text/x-fasta", "https://www.iana.org/assignments/media-types/application/gzip"],
+                "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/1c/32765287e1b6023b2692950cb84820",
+                "checksum" : {
+                    "checksumValue":"1c32765287e1b6023b2692950cb84820"
+                },
                 "description": "sequence data for eukaryotic Large Subunit ribosomal RNA (LSU rRNA) molecule"
             },
             {
-                "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/sequence-categorisation/RNaseP_bact_a.RF00010.fasta.gz.dvc",
+                "@id": "./sequence-categorisation/RNaseP_bact_a.RF00010.fasta.gz",
                 "@type": "File",
                 "name": "RNaseP_bact_a.RF00010.fasta.gz",
                 "contentSize": 5256,
-                "encodingFormat": "application/gzip",
-                "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/de/17daa37a4dd5e2dfc1ee7dea6efe2a",
-                "checksum" : "de17daa37a4dd5e2dfc1ee7dea6efe2a",
+                "encodingFormat": ["text/x-fasta", "https://www.iana.org/assignments/media-types/application/gzip"],
+                "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/de/17daa37a4dd5e2dfc1ee7dea6efe2a",
+                "checksum" : {
+                    "checksumValue":"de17daa37a4dd5e2dfc1ee7dea6efe2a"
+                },
                 "description": "sequence data for a specific bacterial RNase P molecule"
             },
             {
-                "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/sequence-categorisation/RNaseP_bact_b.RF00011.fasta.gz.dvc",
+                "@id": "./sequence-categorisation/RNaseP_bact_b.RF00011.fasta.gz",
                 "@type": "File",
                 "name": "RNaseP_bact_b.RF00011.fasta.gz",
                 "contentSize": 215,
-                "encodingFormat": "application/gzip",
-                "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/ba/db641ae9470949054fd5fb51a55887",
-                "checksum" : "badb641ae9470949054fd5fb51a55887",
+                "encodingFormat": ["text/x-fasta", "https://www.iana.org/assignments/media-types/application/gzip"],
+                "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/ba/db641ae9470949054fd5fb51a55887",
+                "checksum" : {
+                    "checksumValue":"badb641ae9470949054fd5fb51a55887"
+                },
                 "description": "sequence data for a specific bacterial RNase P molecule"
             },
             {
-                "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/sequence-categorisation/SSU_rRNA_archaea.RF01959.fa.gz.dvc",
+                "@id": "./sequence-categorisation/SSU_rRNA_archaea.RF01959.fa.gz",
                 "@type": "File",
                 "name": "SSU_rRNA_archaea.RF01959.fa.gz",
                 "contentSize": 2221,
-                "encodingFormat": "application/gzip",
-                "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/4a/68cf95aa73e0b8beee9648006c5521",
-                "checksum" : "4a68cf95aa73e0b8beee9648006c5521",
+                "encodingFormat":["text/x-fasta", "https://www.iana.org/assignments/media-types/application/gzip"],
+                "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/4a/68cf95aa73e0b8beee9648006c5521",
+                "checksum" : {
+                    "checksumValue":"4a68cf95aa73e0b8beee9648006c5521"
+                },
                 "description": "sequence data for a archaeal Small Subunit ribosomal RNA (SSU rRNA) molecule"
             },
             {
-                "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/sequence-categorisation/SSU_rRNA_bacteria.RF00177.fa.gz.dvc",
+                "@id": "./sequence-categorisation/SSU_rRNA_bacteria.RF00177.fa.gz",
                 "@type": "File",
                 "name": "SSU_rRNA_bacteria.RF00177.fa.gz",
                 "contentSize": 492439,
-                "encodingFormat": "application/gzip",
-                "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/c4/865095d68b928a9321c9a1eadbd1f9",
-                "checksum" : "c4865095d68b928a9321c9a1eadbd1f9",
+                "encodingFormat": ["text/x-fasta", "https://www.iana.org/assignments/media-types/application/gzip"],
+                "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/c4/865095d68b928a9321c9a1eadbd1f9",
+                "checksum" : {
+                    "checksumValue":"c4865095d68b928a9321c9a1eadbd1f9"
+                },
                 "description": "sequence data for a bacterial Small Subunit ribosomal RNA (SSU rRNA) molecule"
             },
             {
-                "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/sequence-categorisation/SSU_rRNA_eukarya.RF01960.fa.gz.dvc",
+                "@id": "./sequence-categorisation/SSU_rRNA_eukarya.RF01960.fa.gz",
                 "@type": "File",
                 "name": "SSU_rRNA_eukarya.RF01960.fa.gz",
                 "contentSize": 27543,
-                "encodingFormat": "application/gzip",
-                "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/9e/06f13fbcd0017e7481e0b39e4baa3d",
-                "checksum" : "9e06f13fbcd0017e7481e0b39e4baa3d",
+                "encodingFormat": ["text/x-fasta", "https://www.iana.org/assignments/media-types/application/gzip"],
+                "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/9e/06f13fbcd0017e7481e0b39e4baa3d",
+                "checksum" : {
+                    "checksumValue":"9e06f13fbcd0017e7481e0b39e4baa3d"
+                },
                 "description": "sequence data for a eukaryotic Small Subunit ribosomal RNA (SSU rRNA) molecule"
             },
             {
-                "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/sequence-categorisation/alpha_tmRNA.RF01849.fasta.gz.dvc",
+                "@id": "./sequence-categorisation/alpha_tmRNA.RF01849.fasta.gz",
                 "@type": "File",
                 "name": "alpha_tmRNA.RF01849.fasta.gz",
                 "contentSize": 2760,
-                "encodingFormat": "application/gzip",
-                "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/7d/d7bfcfb474d56c83db3ed45139e8f6",
-                "checksum" : "7dd7bfcfb474d56c83db3ed45139e8f6",
+                "encodingFormat": ["text/x-fasta", "https://www.iana.org/assignments/media-types/application/gzip"],
+                "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/7d/d7bfcfb474d56c83db3ed45139e8f6",
+                "checksum" : {
+                    "checksumValue":"7dd7bfcfb474d56c83db3ed45139e8f6"
+                },
                 "description": "sequence data for an alpha-type transfer-messenger RNA (tmRNA) molecule"
             },
             {
-                "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/sequence-categorisation/cyano_tmRNA.RF01851.fasta.gz.dvc",
+                "@id": "./sequence-categorisation/cyano_tmRNA.RF01851.fasta.gz",
                 "@type": "File",
                 "name": "cyano_tmRNA.RF01851.fasta.gz",
                 "contentSize": 488,
-                "encodingFormat": "application/gzip",
-                "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/2b/480f8b2d6c8a69f692ae2c166518dc",
-                "checksum" : "2b480f8b2d6c8a69f692ae2c166518dc",
+                "encodingFormat": ["text/x-fasta", "https://www.iana.org/assignments/media-types/application/gzip"],
+                "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/2b/480f8b2d6c8a69f692ae2c166518dc",
+                "checksum" : {
+                    "checksumValue":"2b480f8b2d6c8a69f692ae2c166518dc"
+                },
                 "description": "sequence data for a cyanobacterial transfer-messenger RNA (tmRNA) molecule"
             },
             {
-                "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/sequence-categorisation/tRNA-Sec.RF01852.fasta.gz.dvc",
+                "@id": "./sequence-categorisation/tRNA-Sec.RF01852.fasta.gz",
                 "@type": "File",
                 "name": "tRNA-Sec.RF01852.fasta.gz",
                 "contentSize": 1625,
-                "encodingFormat": "application/gzip",
-                "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/9b/98d6390f4b2c8fae5d7b2ff5b7a6ff",
-                "checksum" : "9b98d6390f4b2c8fae5d7b2ff5b7a6ff",
+                "encodingFormat": ["text/x-fasta", "https://www.iana.org/assignments/media-types/application/gzip"],
+                "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/9b/98d6390f4b2c8fae5d7b2ff5b7a6ff",
+                "checksum" : {
+                    "checksumValue":"9b98d6390f4b2c8fae5d7b2ff5b7a6ff"
+                },
                 "description": "sequence data for a specific transfer RNA (tRNA) molecule"
             },
             {
-                "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/sequence-categorisation/tRNA.RF00005.fasta.gz.dvc",
+                "@id": "./sequence-categorisation/tRNA.RF00005.fasta.gz",
                 "@type": "File",
                 "name": "tRNA.RF00005.fasta.gz",
                 "contentSize": 177711,
-                "encodingFormat": "application/gzip",
-                "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/32/ba6683fa8a8e40fde1a83e00acad18",
-                "checksum" : "32ba6683fa8a8e40fde1a83e00acad18",
+                "encodingFormat": ["text/x-fasta", "https://www.iana.org/assignments/media-types/application/gzip"],
+                "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/32/ba6683fa8a8e40fde1a83e00acad18",
+                "checksum" : {
+                    "checksumValue":"32ba6683fa8a8e40fde1a83e00acad18"
+                },
                 "description": " likely contains the sequence data for a transfer RNA (tRNA) molecule"
             },
             {
-                "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/sequence-categorisation/tmRNA.RF00023.fasta.gz.dvc",
+                "@id": "./sequence-categorisation/tmRNA.RF00023.fasta.gz",
                 "@type": "File",
                 "name": "tmRNA.RF00023.fasta.gz",
                 "contentSize": 7624,
-                "encodingFormat": "application/gzip",
-                "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/94/4b55c85125338ca1d1f4d075656a8d",
-                "checksum" : "944b55c85125338ca1d1f4d075656a8d",
+                "encodingFormat": ["text/x-fasta", "https://www.iana.org/assignments/media-types/application/gzip"],
+                "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/94/4b55c85125338ca1d1f4d075656a8d",
+                "checksum" : {
+                    "checksumValue":"944b55c85125338ca1d1f4d075656a8d"
+                },
                 "description": "sequence data for a transfer-messenger RNA (tmRNA) molecule"
             },
     {
-        "@id": "taxonomy-summary/",
+        "@id": "./taxonomy-summary",
         "@type": "Dataset",
         "name": "taxonomy-summary",
         "hasPart": [
-            {"@id": "LSU"},
-            {"@id": "SSU"}
+            {"@id": "./taxonomy-summary/LSU"},
+            {"@id": "./taxonomy-summary/SSU"}
                 ]
     },
         {
-            "@id": "LSU",
+            "@id": "./taxonomy-summary/LSU",
             "@type": "Dataset",
             "name": "LSU",
             "hasPart": [
-               {"@id": "https://github.com/emo-bon/mgf-s3-prototype/tree/main/EMOBON00093/taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq.gz.dvc"},
-               {"@id": "https://github.com/emo-bon/mgf-s3-prototype/tree/main/EMOBON00093/taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq.tsv.dvc"},
-               {"@id": "https://github.com/emo-bon/mgf-s3-prototype/tree/main/EMOBON00093/taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq.txt.dvc"},
-               {"@id": "https://github.com/emo-bon/mgf-s3-prototype/tree/main/EMOBON00093/taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq_hdf5.biom.dvc"},
-               {"@id": "https://github.com/emo-bon/mgf-s3-prototype/tree/main/EMOBON00093/taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq_json.biom.dvc"},
-               {"@id": "https://github.com/emo-bon/mgf-s3-prototype/tree/main/EMOBON00093/taxonomy-summary/LSU/krona.html.dvc"}
+               {"@id": "./taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq.gz"},
+               {"@id": "./taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq.tsv"},
+               {"@id": "./taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq.txt"},
+               {"@id": "./taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq_hdf5.biom"},
+               {"@id": "./taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq_json.biom"},
+               {"@id": "./taxonomy-summary/LSU/krona.html"}
             ]
         },
             {
-                "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq.gz.dvc",
+                "@id": "./taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq.gz",
                 "@type": "File",
                 "name": "DBH.merged_LSU.fasta.mseq.gz",
                 "contentSize": 970445,
-                "encodingFormat": "application/gzip",
-                "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/4d/383130eee95fe8f97b533e2de21dfa",
-                "checksum" : "4d383130eee95fe8f97b533e2de21dfa",
+                "encodingFormat": ["https://www.iana.org/assignments/media-types/application/vnd.mseq", "https://www.iana.org/assignments/media-types/application/gzip"],
+                "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/4d/383130eee95fe8f97b533e2de21dfa",
+                "checksum" : {
+                    "checksumValue":"4d383130eee95fe8f97b533e2de21dfa"
+                },
                 "description": "LSU sequences used for indentification"
             },
             {
-                "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq.tsv.dvc",
+                "@id": "./taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq.tsv",
                 "@type": "File",
                 "name": "DBH.merged_LSU.fasta.mseq.tsv",
                 "contentSize": 54959,
-                "encodingFormat": "text/tab-separated-values",
-                "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/64/bd3b85367cd4ac8fbd7552a1215cdf",
-                "checksum" : "64bd3b85367cd4ac8fbd7552a1215cdf",
+                "encodingFormat": ["https://www.iana.org/assignments/media-types/application/vnd.mseq", "https://www.iana.org/assignments/media-types/text/tab-separated-values"],
+                "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/64/bd3b85367cd4ac8fbd7552a1215cdf",
+                "checksum" : {
+                    "checksumValue":"64bd3b85367cd4ac8fbd7552a1215cdf"
+                },
                 "description": "Tab-separated formatted taxon counts for LSU sequences"
             },
             {
-                "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq.txt.dvc",
+                "@id": "./taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq.txt",
                 "@type": "File",
                 "name": "DBH.merged_LSU.fasta.mseq.txt",
                 "contentSize": 47253,
-                "encodingFormat": "text/plain",
-                "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/8a/9a05d7f9604b4b16e65bcb36a5687b",
-                "checksum" : "8a9a05d7f9604b4b16e65bcb36a5687b",
+                "encodingFormat": ["text/x-fasta", "https://www.iana.org/assignments/media-types/application/vnd.mseq", "text/plain"],
+                "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/8a/9a05d7f9604b4b16e65bcb36a5687b",
+                "checksum" : {
+                    "checksumValue":"8a9a05d7f9604b4b16e65bcb36a5687b"
+                },
                 "description": "Text-based taxon counts for LSU sequences"
             },
             {
-                "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq_hdf5.biom.dvc",
+                "@id": "./taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq_hdf5.biom",
                 "@type": "File",
                 "name": "DBH.merged_LSU.fasta.mseq_hdf5.biom",
                 "contentSize": 65712,
                 "encodingFormat": "application/json-ld",
-                "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/68/1fcd4bd22247fbb959ddcf4965a79b",
-                "checksum" : "681fcd4bd22247fbb959ddcf4965a79b",
+                "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/68/1fcd4bd22247fbb959ddcf4965a79b",
+                "checksum" : {
+                    "checksumValue":"681fcd4bd22247fbb959ddcf4965a79b"
+                },
                 "description": "BIOM formatted hdf5 taxon counts for LSU sequences"
             },
             {
-                "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq_json.biom.dvc",
+                "@id": "./taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq_json.biom",
                 "@type": "File",
                 "name": "DBH.merged_LSU.fasta.mseq_json.biom",
                 "contentSize": 76542,
                 "encodingFormat": "text/plain",
-                "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/7e/86769201a874fd65dd42b347123b2f",
-                "checksum" : "7e86769201a874fd65dd42b347123b2f",
+                "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/7e/86769201a874fd65dd42b347123b2f",
+                "checksum" : {
+                    "checksumValue":"7e86769201a874fd65dd42b347123b2f"
+                },
                 "description": "BIOM formatted taxon counts for LSU sequences"
             },
             {
-                "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/taxonomy-summary/LSU/krona.html.dvc",
+                "@id": "./taxonomy-summary/LSU/krona.html",
                 "@type": "File",
                 "name": "krona.html",
                 "contentSize": 307411,
                 "encodingFormat": "application/xhtml+xml",
-                "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/42/63fd4dace9eac29a1a95cac78e24fa",
-                "checksum" : "4263fd4dace9eac29a1a95cac78e24fa",
+                "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/42/63fd4dace9eac29a1a95cac78e24fa",
+                "checksum" : {
+                    "checksumValue":"4263fd4dace9eac29a1a95cac78e24fa"
+                },
                 "description": "Krona summary of LSU taxonomic inventory"
             },
     {
-        "@id": "SSU",
+        "@id": "./taxonomy-summary/SSU",
         "@type": "Dataset",
         "name": "SSU",
         "hasPart": [
-            {"@id": "https://github.com/emo-bon/mgf-s3-prototype/tree/main/EMOBON00093/taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq.gz.dvc"},
-            {"@id": "https://github.com/emo-bon/mgf-s3-prototype/tree/main/EMOBON00093/taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq.tsv.dvc"},
-            {"@id": "https://github.com/emo-bon/mgf-s3-prototype/tree/main/EMOBON00093/taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq.txt.dvc"},
-            {"@id": "https://github.com/emo-bon/mgf-s3-prototype/tree/main/EMOBON00093/taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq_hdf5.biom.dvc"},
-            {"@id": "https://github.com/emo-bon/mgf-s3-prototype/tree/main/EMOBON00093/taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq_json.biom.dvc"},
-            {"@id": "https://github.com/emo-bon/mgf-s3-prototype/tree/main/EMOBON00093/taxonomy-summary/SSU/krona.html.dvc"}
+            {"@id": "./taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq.gz"},
+            {"@id": "./taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq.tsv"},
+            {"@id": "./taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq.txt"},
+            {"@id": "./taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq_hdf5.biom"},
+            {"@id": "./taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq_json.biom"},
+            {"@id": "./taxonomy-summary/SSU/krona.html"}
           ]
 
     },
         {
-            "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq.gz.dvc",
+            "@id": "./taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq.gz",
             "@type": "File",
             "name": "DBH.merged_SSU.fasta.mseq.gz",
             "contentSize": 472282,
-            "encodingFormat": "application/gzip",
-            "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/0e/ba362214d172510bcadbe23fcfa935",
-            "checksum" : "0eba362214d172510bcadbe23fcfa935",
+            "encodingFormat": ["text/x-fasta","https://www.iana.org/assignments/media-types/application/vnd.mseq","https://www.iana.org/assignments/media-types/application/gzip"],
+            "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/0e/ba362214d172510bcadbe23fcfa935",
+            "checksum" : {
+                "checksumValue":"0eba362214d172510bcadbe23fcfa935"
+            },
             "description": "SSU sequences used for identification"
         },
         {
-            "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq.tsv.dvc",
+            "@id": "./taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq.tsv",
             "@type": "File",
             "name": "DBH.merged_SSU.fasta.mseq.tsv",
             "contentSize": 35379,
-            "encodingFormat": "text/tab-separated-values",
-            "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/77/122c614eaac158e124e57e1a273be6",
-            "checksum" : "77122c614eaac158e124e57e1a273be6",
+            "encodingFormat": ["text/x-fasta","https://www.iana.org/assignments/media-types/application/vnd.mseq", "https://www.iana.org/assignments/media-types/text/tab-separated-values"],
+            "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/77/122c614eaac158e124e57e1a273be6",
+            "checksum" : {
+                "checksumValue":"77122c614eaac158e124e57e1a273be6"
+            },
             "description": "Tab-separated formatted taxon counts for SSU sequences"
         },
         {
-            "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq.txt.dvc",
+            "@id": "./taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq.txt",
             "@type": "File",
             "name": "DBH.merged_SSU.fasta.mseq.txt",
             "contentSize": 29980,
-            "encodingFormat": "text/plain",
-            "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/48/5e166262964524c5f3106798f82645",
-            "checksum" : "485e166262964524c5f3106798f82645",
+            "encodingFormat": ["text/x-fasta","https://www.iana.org/assignments/media-types/application/vnd.mseq", "text/plain"],
+            "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/48/5e166262964524c5f3106798f82645",
+            "checksum" : {
+                "checksumValue":"485e166262964524c5f3106798f82645"
+            },
             "description": "Text-based formatted taxon counts for SSU sequences"
         },
         {
-            "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq_hdf5.biom.dvc",
+            "@id": "./taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq_hdf5.biom",
             "@type": "File",
             "name": "DBH.merged_SSU.fasta.mseq_hdf5.biom",
             "contentSize": 55472,
             "encodingFormat": "application/json-ld",
-            "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/82/c3e3acb8df4b59f588853b91977579",
-            "checksum" : "82c3e3acb8df4b59f588853b91977579",
+            "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/82/c3e3acb8df4b59f588853b91977579",
+            "checksum" : {
+                "checksumValue":"82c3e3acb8df4b59f588853b91977579"
+            },
             "description": "BIOM formatted hdf5 taxon counts for SSU sequences"
         },
         {
-            "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq_json.biom.dvc",
+            "@id": "./taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq_json.biom",
             "@type": "File",
             "name": "DBH.merged_SSU.fasta.mseq_json.biom",
             "contentSize": 49705,
             "encodingFormat": "text/plain",
-            "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/0a/75c2323970955f7fac622e0a325c1c",
-            "checksum" : "0a75c2323970955f7fac622e0a325c1c",
+            "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/0a/75c2323970955f7fac622e0a325c1c",
+            "checksum" : {
+                "checksumValue":"0a75c2323970955f7fac622e0a325c1c"
+            },
             "description": "BIOM formatted taxon counts for SSU sequences"
         },
         {
-            "@id": "https://github.com/emo-bon/mgf-s3-prototype/blob/main/EMOBON00093/taxonomy-summary/SSU/krona.html.dvc",
+            "@id": "./taxonomy-summary/SSU/krona.html",
             "@type": "File",
             "name": "krona.html",
             "contentSize": 283427,
             "encodingFormat": "application/xhtml+xml",
-            "url": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/9d/cae327b1fc0135767b3d27c0a63f29",
-            "checksum" : "9dcae327b1fc0135767b3d27c0a63f29",
+            "downloadUrl": "https://emobon-lfs-demo.s3.mesocentre.uca.fr/files/md5/9d/cae327b1fc0135767b3d27c0a63f29",
+            "checksum" : {
+                "checksumValue":"9dcae327b1fc0135767b3d27c0a63f29"
+            },
             "description": "Krona summary of SSU taxonomic inventory"
         }
 ]
