@@ -1,5 +1,5 @@
 { "@context": {
-    "@base":"https://github.com/emo-bon/",
+    "@base":"https://data.emobon.embrc.eu/mgf-s3-prototype/EMOBON00093/",
     "@vocab":"https://w3id.org/ro/crate/1.2-DRAFT/context",
     "checksum": "http://spdx.org/rdf/terms#checksum",
     "checksumValue":"http://spdx.org/rdf/terms#checksumValue"
@@ -42,30 +42,30 @@
         "license": {"@id": "Creative Commons (CC-BY 4.0)"},                      
         "publisher": {"@id": "https://ror.org/0038zss60"},                          
         "hasPart": [
-                        {"@id": "EMOBON00093/DBH.merged.cmsearch.all.tblout.deoverlapped"},
-                        {"@id": "EMOBON00093/DBH.merged.fasta"},
-                        {"@id": "EMOBON00093/DBH.merged.motus.tsv"},
-                        {"@id": "EMOBON00093/DBH.merged.qc_summary"},
-                        {"@id": "EMOBON00093/DBH.merged.unfiltered_fasta"},
-                        {"@id": "EMOBON00093/DBH.merged_CDS.faa"},
-                        {"@id": "EMOBON00093/DBH.merged_CDS.ffn"},
-                        {"@id": "EMOBON00093/DBH_1_clean.fastq.trimmed.fasta"},
-                        {"@id": "EMOBON00093/DBH_1_clean.fastq.trimmed.qc_summary"},
-                        {"@id": "EMOBON00093/DBH_2_clean.fastq.trimmed.fasta"},
-                        {"@id": "EMOBON00093/DBH_2_clean.fastq.trimmed.qc_summary"},
-                        {"@id": "EMOBON00093/RNA-counts"},
-                        {"@id": "EMOBON00093/config.yml"},
-                        {"@id": "EMOBON00093/fastp.html"},
-                        {"@id": "EMOBON00093/final.contigs.fa"},
-                        {"@id": "functional-annotation"},
-                        {"@id": "EMOBON00093/run.yml"},
-                        {"@id": "sequence-categorisation"},
-                        {"@id": "taxonomy-summary"},
-                        {"@id": "EMOBON00093/provenance.json"}
+                        {"@id": "./DBH.merged.cmsearch.all.tblout.deoverlapped"},
+                        {"@id": "./DBH.merged.fasta"},
+                        {"@id": "./DBH.merged.motus.tsv"},
+                        {"@id": "./DBH.merged.qc_summary"},
+                        {"@id": "./DBH.merged.unfiltered_fasta"},
+                        {"@id": "./DBH.merged_CDS.faa"},
+                        {"@id": "./DBH.merged_CDS.ffn"},
+                        {"@id": "./DBH_1_clean.fastq.trimmed.fasta"},
+                        {"@id": "./DBH_1_clean.fastq.trimmed.qc_summary"},
+                        {"@id": "./DBH_2_clean.fastq.trimmed.fasta"},
+                        {"@id": "./DBH_2_clean.fastq.trimmed.qc_summary"},
+                        {"@id": "./RNA-counts"},
+                        {"@id": "./config.yml"},
+                        {"@id": "./fastp.html"},
+                        {"@id": "./final.contigs.fa"},
+                        {"@id": "./functional-annotation"},
+                        {"@id": "./run.yml"},
+                        {"@id": "./sequence-categorisation"},
+                        {"@id": "./taxonomy-summary"},
+                        {"@id": "./provenance.json"}
                     ] 
     },
     {
-        "@id": "EMOBON00093/provenance.json",
+        "@id": "./provenance.json",
         "@type": ["File", "CPMProvenanceFile"],
         "conformsTo": {"@id": "https://by-covid.github.io/cpm-ro-crate/0.2/"},
         "encodingFormat": "application/ld+json",
@@ -76,7 +76,7 @@
         ]
     },
     {
-        "@id": "EMOBON00093/DBH.merged.cmsearch.all.tblout.deoverlapped",
+        "@id": "./DBH.merged.cmsearch.all.tblout.deoverlapped",
         "@type": "File",
         "name": "Sequences hits list",
         "contentSize": 7855217,
@@ -88,7 +88,7 @@
         "description": "Sequence hits against covariance model databases. Mandatory to run partially the functional annotation step of metaGOflow"
     },
     {
-        "@id": "EMOBON00093/DBH.merged.fasta",
+        "@id": "./DBH.merged.fasta",
         "@type": "File",
         "name": "Merged filtered reads",
         "contentSize": 6304783433,
@@ -100,7 +100,7 @@
         "description": "Merged filtered reads"
     },
     {
-        "@id": "EMOBON00093/DBH.merged.motus.tsv",
+        "@id": "./DBH.merged.motus.tsv",
         "@type": "File",
         "name": "motus list",
         "contentSize": 262,
@@ -112,7 +112,7 @@
         "description": "Assignment and abundance of mOTUs and refOTUs"
     },
     {
-        "@id": "EMOBON00093/DBH.merged.qc_summary",
+        "@id": "./DBH.merged.qc_summary",
         "@type": "File",
         "name": "Stats of merging",
         "contentSize": 219,
@@ -124,7 +124,7 @@
         "description": "Summary with statistics of the merged reads"        
     },
     {
-        "@id": "EMOBON00093/DBH.merged.unfiltered_fasta",
+        "@id": "./DBH.merged.unfiltered_fasta",
         "@type": "File",
         "name": "Merged unfiltered reads",
         "contentSize": 11253236797,
@@ -136,7 +136,7 @@
         "description": "Merged unfiltered reads"        
     },
     {
-        "@id": "EMOBON00093/DBH.merged_CDS.faa",
+        "@id": "./DBH.merged_CDS.faa",
         "@type": "File",
         "name": "Gene coding protein sequences (CDS) in FASTA format",
         "contentSize": 2944752462,
@@ -148,7 +148,7 @@
         "description": "FASTA formatted list of sequences translated to amino acid sequence"        
     },
     {
-        "@id": "EMOBON00093/DBH.merged_CDS.ffn",
+        "@id": "./DBH.merged_CDS.ffn",
         "@type": "File",
         "name": "Gene coding nucleotide sequences (CDS) in FASTA format",
         "contentSize": 5912560492,
@@ -160,7 +160,7 @@
         "description": "These are the assembled contig sequences from the merged reads in FASTA format"
     },
     {
-        "@id": "EMOBON00093/DBH_1_clean.fastq.trimmed.fasta",
+        "@id": "./DBH_1_clean.fastq.trimmed.fasta",
         "@type": "File",
         "name": "FASTQ sequences trimmed - read 1",
         "contentSize": 1932528538,
@@ -172,7 +172,7 @@
         "description": "Filtered .fastq file of the single-end reads (forward)"
     },
     {
-        "@id": "EMOBON00093/DBH_1_clean.fastq.trimmed.qc_summary",
+        "@id": "./DBH_1_clean.fastq.trimmed.qc_summary",
         "@type": "File",
         "name": "filtering report file",
         "contentSize": 219,
@@ -184,7 +184,7 @@
         "description": "Summary with statistics of the single-end reads (forward)"        
     },
     {
-        "@id": "EMOBON00093/DBH_2_clean.fastq.trimmed.fasta",
+        "@id": "./DBH_2_clean.fastq.trimmed.fasta",
         "@type": "File",
         "name": "FASTQ sequences trimmed - read 2",
         "contentSize": 1931917801,
@@ -196,7 +196,7 @@
         "description": "Filtered .fastq file of the single-end reads (reverse)"
     },
     {
-        "@id": "EMOBON00093/DBH_2_clean.fastq.trimmed.qc_summary",
+        "@id": "./DBH_2_clean.fastq.trimmed.qc_summary",
         "@type": "File",
         "name": "filtering report file",
         "contentSize": 219,
@@ -208,7 +208,7 @@
         "description": "Summary with statistics of the single-end reads (reverse)."        
     },
     {
-        "@id": "EMOBON00093/RNA-counts",
+        "@id": "./RNA-counts",
         "@type": "File",
         "name": "SSU and LSU count",
         "contentSize": 31,
@@ -220,7 +220,7 @@
         "description": "numbers of RNA's counted"        
     },
     {
-        "@id": "EMOBON00093/config.yml",
+        "@id": "./config.yml",
         "@type": "File",
         "name": "Config yml file",
         "contentSize": 2857,
@@ -232,7 +232,7 @@
         "description": "Config yml file"        
     },
     {
-        "@id": "EMOBON00093/fastp.html",
+        "@id": "./fastp.html",
         "@type": "File",
         "name": "FASTP analysis of raw sequence data",
         "contentSize": 386191,
@@ -244,7 +244,7 @@
         "description": "Quality control and preprocessing of FASTQ files"        
     },
     {
-        "@id": "EMOBON00093/final.contigs.fa",
+        "@id": "./final.contigs.fa",
         "@type": "File",
         "name": "FASTA formatted contig sequences",
         "contentSize": 220538023,
@@ -256,7 +256,7 @@
         "description": "These are the assembled contig sequences from the merged reads in FASTA format"       
     },
     {
-        "@id": "EMOBON00093/run.yml",
+        "@id": "./run.yml",
         "@type": "File",
         "name": "Run yml file",
         "contentSize": 10233,
@@ -268,35 +268,35 @@
         "description": "Run yml file"       
     },
     {
-        "@id": "functional_annotation",
+        "@id": "./functional_annotation",
         "@type": "Dataset",
         "name": "Functional annotation results",
         "description": "Functional annotation of merged reads",
         "hasPart": [
-          {"@id": "EMOBON00093/functional-annotation/DBH.merged.hmm.tsv.gz"},
-          {"@id": "EMOBON00093/functional-annotation/DBH.merged.summary.go"},
-          {"@id": "EMOBON00093/functional-annotation/DBH.merged.summary.go_slim"},
-          {"@id": "EMOBON00093/functional-annotation/DBH.merged.summary.ips"},
-          {"@id": "EMOBON00093/functional-annotation/DBH.merged.summary.ko"},
-          {"@id": "EMOBON00093/functional-annotation/DBH.merged.summary.pfam"},
-          {"@id": "EMOBON00093/functional-annotation/DBH.merged_CDS.I5.tsv.gz"},
-          {"@id": "stats"}
+          {"@id": "./functional-annotation/DBH.merged.hmm.tsv.gz"},
+          {"@id": "./functional-annotation/DBH.merged.summary.go"},
+          {"@id": "./functional-annotation/DBH.merged.summary.go_slim"},
+          {"@id": "./functional-annotation/DBH.merged.summary.ips"},
+          {"@id": "./functional-annotation/DBH.merged.summary.ko"},
+          {"@id": "./functional-annotation/DBH.merged.summary.pfam"},
+          {"@id": "./functional-annotation/DBH.merged_CDS.I5.tsv.gz"},
+          {"@id": "./functional-annotation/stats"}
         ]
     },
         {
-            "@id": "stats",
+            "@id": "./functional-annotation/stats",
             "@type": "Dataset",
             "name": "Summary statistic for functional annotation",
             "hasPart": [
-                {"@id": "EMOBON00093/functional-annotation/stats/go.stats"},
-                {"@id": "EMOBON00093/functional-annotation/stats/interproscan.stats"},
-                {"@id": "EMOBON00093/functional-annotation/stats/ko.stats"},
-                {"@id": "EMOBON00093/functional-annotation/stats/orf.stats"},
-                {"@id": "EMOBON00093/functional-annotation/stats/pfam.stats"}
+                {"@id": "./functional-annotation/stats/go.stats"},
+                {"@id": "./functional-annotation/stats/interproscan.stats"},
+                {"@id": "./functional-annotation/stats/ko.stats"},
+                {"@id": "./functional-annotation/stats/orf.stats"},
+                {"@id": "./functional-annotation/stats/pfam.stats"}
                 ]
         },
                 {
-                    "@id": "EMOBON00093/functional-annotation/stats/go.stats",
+                    "@id": "./functional-annotation/stats/go.stats",
                     "@type": "File",
                     "name": "Geno Ontology summary statistics-annotation/stats/go.stats",
                     "contentSize": 88,
@@ -308,7 +308,7 @@
                     "description": "Geno Ontology summary statistics"
                 },
                 {
-                    "@id": "EMOBON00093/functional-annotation/stats/interproscan.stats",
+                    "@id": "./functional-annotation/stats/interproscan.stats",
                     "@type": "File",
                     "name": "InterProScan summary statistics",
                     "contentSize": 118,
@@ -320,7 +320,7 @@
                     "description": "InterProScan summary statistics"
                 },
                 {
-                    "@id": "EMOBON00093/functional-annotation/stats/ko.stats",
+                    "@id": "./functional-annotation/stats/ko.stats",
                     "@type": "File",
                     "name": "Kegg Ontology summary statistics",
                     "contentSize": 85,
@@ -332,7 +332,7 @@
                     "description": "Kegg Ontology summary statistics"
                 },
                 {
-                    "@id": "EMOBON00093/functional-annotation/stats/orf.stats",
+                    "@id": "./functional-annotation/stats/orf.stats",
                     "@type": "File",
                     "name": "ORF summary statistics",
                     "contentSize": 88,
@@ -344,7 +344,7 @@
                     "description": "ORF summary statistics"
                  },
                  {
-                    "@id": "EMOBON00093/functional-annotation/stats/pfam.stats",
+                    "@id": "./functional-annotation/stats/pfam.stats",
                     "@type": "File",
                     "name": "Pfam summary statistcs",
                     "contentSize": 94,
@@ -356,7 +356,7 @@
                     "description": "Pfam summary statistcs"                 
                  },
             {
-                "@id": "EMOBON00093/functional-annotation/DBH.merged.hmm.tsv.gz",
+                "@id": "./functional-annotation/DBH.merged.hmm.tsv.gz",
                 "@type": "File",
                 "name": "Merged contigs HMM summary",
                 "contentSize": 16787551,
@@ -368,7 +368,7 @@
                 "description": "Merged contigs HMM summary"
             },
             {
-                "@id": "EMOBON00093/functional-annotation/DBH.merged.summary.go",
+                "@id": "./functional-annotation/DBH.merged.summary.go",
                 "@type": "File",
                 "name": "Merged contigs GO summary",
                 "contentSize": 149935,
@@ -380,7 +380,7 @@
                 "description": "Merged contigs GO summary"
             },
             {
-                "@id": "EMOBON00093/functional-annotation/DBH.merged.summary.ips",
+                "@id": "./functional-annotation/DBH.merged.summary.ips",
                 "@type": "File",
                 "name": "Merged contigs InterProScan",
                 "contentSize": 599575,
@@ -392,7 +392,7 @@
                 "description": "Merged contigs InterProScan"
             },
             {
-                "@id": "EMOBON00093/functional-annotation/DBH.merged.summary.ko",
+                "@id": "./functional-annotation/DBH.merged.summary.ko",
                 "@type": "File",
                 "name": "Merged contigs KO summary",
                 "contentSize": 127053,
@@ -404,7 +404,7 @@
                 "description": "Merged contigs KO summary"
             },
             {
-                "@id": "EMOBON00093/functional-annotation/DBH.merged.summary.pfam",
+                "@id": "./functional-annotation/DBH.merged.summary.pfam",
                 "@type": "File",
                 "name": "Merged contigs PFAM summary",
                 "contentSize": 510926,
@@ -416,7 +416,7 @@
                 "description": "Merged contigs PFAM summary"
             },
             {
-                "@id": "EMOBON00093/functional-annotation/DBH.merged_CDS.I5.tsv.gz",
+                "@id": "./functional-annotation/DBH.merged_CDS.I5.tsv.gz",
                 "@type": "File",
                 "name": "Merged contigs CDS I5 summary",
                 "contentSize": 2340635561,
@@ -428,31 +428,31 @@
                 "description": "Merged contigs CDS I5 summary"
             },
     {
-        "@id": "sequence-categorisation",
+        "@id": "./sequence-categorisation",
         "@type": "Dataset",
         "name": "Sequence categorisation",
         "description": "Identify specific loci in the sample.",
         "hasPart": [
-            {"@id": "EMOBON00093/sequence-categorisation/5_8S.fa.gz"},
-            {"@id": "EMOBON00093/sequence-categorisation/Bacteria_large_SRP.RF01854.fasta.gz"},
-            {"@id": "EMOBON00093/sequence-categorisation/Bacteria_small_SRP.RF00169.fasta.gz"},
-            {"@id": "EMOBON00093/sequence-categorisation/LSU_rRNA_archaea.RF02540.fa.gz"},
-            {"@id": "EMOBON00093/sequence-categorisation/LSU_rRNA_bacteria.RF02541.fa.gz"},
-            {"@id": "EMOBON00093/sequence-categorisation/LSU_rRNA_eukarya.RF02543.fa.gz"},
-            {"@id": "EMOBON00093/sequence-categorisation/RNaseP_bact_a.RF00010.fasta.gz"},
-            {"@id": "EMOBON00093/sequence-categorisation/RNaseP_bact_b.RF00011.fasta.gz"},
-            {"@id": "EMOBON00093/sequence-categorisation/SSU_rRNA_archaea.RF01959.fa.gz"},
-            {"@id": "EMOBON00093/sequence-categorisation/SSU_rRNA_bacteria.RF00177.fa.gz"},
-            {"@id": "EMOBON00093/sequence-categorisation/SSU_rRNA_eukarya.RF01960.fa.gz"},
-            {"@id": "EMOBON00093/sequence-categorisation/alpha_tmRNA.RF01849.fasta.gz"},
-            {"@id": "EMOBON00093/sequence-categorisation/cyano_tmRNA.RF01851.fasta.gz"},
-            {"@id": "EMOBON00093/sequence-categorisation/tRNA-Sec.RF01852.fasta.gz"},
-            {"@id": "EMOBON00093/sequence-categorisation/tRNA.RF00005.fasta.gz"},
-            {"@id": "EMOBON00093/sequence-categorisation/tmRNA.RF00023.fasta.gz"}
+            {"@id": "./sequence-categorisation/5_8S.fa.gz"},
+            {"@id": "./sequence-categorisation/Bacteria_large_SRP.RF01854.fasta.gz"},
+            {"@id": "./sequence-categorisation/Bacteria_small_SRP.RF00169.fasta.gz"},
+            {"@id": "./sequence-categorisation/LSU_rRNA_archaea.RF02540.fa.gz"},
+            {"@id": "./sequence-categorisation/LSU_rRNA_bacteria.RF02541.fa.gz"},
+            {"@id": "./sequence-categorisation/LSU_rRNA_eukarya.RF02543.fa.gz"},
+            {"@id": "./sequence-categorisation/RNaseP_bact_a.RF00010.fasta.gz"},
+            {"@id": "./sequence-categorisation/RNaseP_bact_b.RF00011.fasta.gz"},
+            {"@id": "./sequence-categorisation/SSU_rRNA_archaea.RF01959.fa.gz"},
+            {"@id": "./sequence-categorisation/SSU_rRNA_bacteria.RF00177.fa.gz"},
+            {"@id": "./sequence-categorisation/SSU_rRNA_eukarya.RF01960.fa.gz"},
+            {"@id": "./sequence-categorisation/alpha_tmRNA.RF01849.fasta.gz"},
+            {"@id": "./sequence-categorisation/cyano_tmRNA.RF01851.fasta.gz"},
+            {"@id": "./sequence-categorisation/tRNA-Sec.RF01852.fasta.gz"},
+            {"@id": "./sequence-categorisation/tRNA.RF00005.fasta.gz"},
+            {"@id": "./sequence-categorisation/tmRNA.RF00023.fasta.gz"}
             ]
     },
             {
-                "@id": "EMOBON00093/sequence-categorisation/5_8S.fa.gz",
+                "@id": "./sequence-categorisation/5_8S.fa.gz",
                 "@type": "File",
                 "name": "5_8S.fa.gz",
                 "contentSize": 1856,
@@ -464,7 +464,7 @@
                 "description": "5_8S.fa.gz"
             },
             {
-                "@id": "EMOBON00093/sequence-categorisation/Bacteria_large_SRP.RF01854.fasta.gz",
+                "@id": "./sequence-categorisation/Bacteria_large_SRP.RF01854.fasta.gz",
                 "@type": "File",
                 "name": "Bacteria_large_SRP.RF01854.fasta.gz",
                 "contentSize": 3788,
@@ -476,7 +476,7 @@
                 "description": "FASTA file containing bacteria nucleotide sequences"
             },
             {
-                "@id": "EMOBON00093/sequence-categorisation/Bacteria_small_SRP.RF00169.fasta.gz",
+                "@id": "./sequence-categorisation/Bacteria_small_SRP.RF00169.fasta.gz",
                 "@type": "File",
                 "name": "Bacteria_small_SRP.RF00169.fasta.gz",
                 "contentSize": 5480,
@@ -488,7 +488,7 @@
                 "description": "FASTA file containing bacteria nucleotide sequences"
             },
             {
-                "@id": "EMOBON00093/sequence-categorisation/LSU_rRNA_archaea.RF02540.fa.gz",
+                "@id": "./sequence-categorisation/LSU_rRNA_archaea.RF02540.fa.gz",
                 "@type": "File",
                 "name": "LSU_rRNA_archaea.RF02540.fa.gz",
                 "contentSize": 3127,
@@ -500,7 +500,7 @@
                 "description": "LSU ribosomal RNA sequences for Archaea."
             },
             {
-                "@id": "EMOBON00093/sequence-categorisation/LSU_rRNA_bacteria.RF02541.fa.gz",
+                "@id": "./sequence-categorisation/LSU_rRNA_bacteria.RF02541.fa.gz",
                 "@type": "File",
                 "name": "LSU_rRNA_bacteria.RF02541.fa.gz",
                 "contentSize": 1036560,
@@ -512,7 +512,7 @@
                 "description": "sequence data for bacterial Large Subunit ribosomal RNA (LSU rRNA) molecule"
             },
             {
-                "@id": "EMOBON00093/sequence-categorisation/LSU_rRNA_eukarya.RF02543.fa.gz",
+                "@id": "./sequence-categorisation/LSU_rRNA_eukarya.RF02543.fa.gz",
                 "@type": "File",
                 "name": "LSU_rRNA_eukarya.RF02543.fa.gz",
                 "contentSize": 53878,
@@ -524,7 +524,7 @@
                 "description": "sequence data for eukaryotic Large Subunit ribosomal RNA (LSU rRNA) molecule"
             },
             {
-                "@id": "EMOBON00093/sequence-categorisation/RNaseP_bact_a.RF00010.fasta.gz",
+                "@id": "./sequence-categorisation/RNaseP_bact_a.RF00010.fasta.gz",
                 "@type": "File",
                 "name": "RNaseP_bact_a.RF00010.fasta.gz",
                 "contentSize": 5256,
@@ -536,7 +536,7 @@
                 "description": "sequence data for a specific bacterial RNase P molecule"
             },
             {
-                "@id": "EMOBON00093/sequence-categorisation/RNaseP_bact_b.RF00011.fasta.gz",
+                "@id": "./sequence-categorisation/RNaseP_bact_b.RF00011.fasta.gz",
                 "@type": "File",
                 "name": "RNaseP_bact_b.RF00011.fasta.gz",
                 "contentSize": 215,
@@ -548,7 +548,7 @@
                 "description": "sequence data for a specific bacterial RNase P molecule"
             },
             {
-                "@id": "EMOBON00093/sequence-categorisation/SSU_rRNA_archaea.RF01959.fa.gz",
+                "@id": "./sequence-categorisation/SSU_rRNA_archaea.RF01959.fa.gz",
                 "@type": "File",
                 "name": "SSU_rRNA_archaea.RF01959.fa.gz",
                 "contentSize": 2221,
@@ -560,7 +560,7 @@
                 "description": "sequence data for a archaeal Small Subunit ribosomal RNA (SSU rRNA) molecule"
             },
             {
-                "@id": "EMOBON00093/sequence-categorisation/SSU_rRNA_bacteria.RF00177.fa.gz",
+                "@id": "./sequence-categorisation/SSU_rRNA_bacteria.RF00177.fa.gz",
                 "@type": "File",
                 "name": "SSU_rRNA_bacteria.RF00177.fa.gz",
                 "contentSize": 492439,
@@ -572,7 +572,7 @@
                 "description": "sequence data for a bacterial Small Subunit ribosomal RNA (SSU rRNA) molecule"
             },
             {
-                "@id": "EMOBON00093/sequence-categorisation/SSU_rRNA_eukarya.RF01960.fa.gz",
+                "@id": "./sequence-categorisation/SSU_rRNA_eukarya.RF01960.fa.gz",
                 "@type": "File",
                 "name": "SSU_rRNA_eukarya.RF01960.fa.gz",
                 "contentSize": 27543,
@@ -584,7 +584,7 @@
                 "description": "sequence data for a eukaryotic Small Subunit ribosomal RNA (SSU rRNA) molecule"
             },
             {
-                "@id": "EMOBON00093/sequence-categorisation/alpha_tmRNA.RF01849.fasta.gz",
+                "@id": "./sequence-categorisation/alpha_tmRNA.RF01849.fasta.gz",
                 "@type": "File",
                 "name": "alpha_tmRNA.RF01849.fasta.gz",
                 "contentSize": 2760,
@@ -596,7 +596,7 @@
                 "description": "sequence data for an alpha-type transfer-messenger RNA (tmRNA) molecule"
             },
             {
-                "@id": "EMOBON00093/sequence-categorisation/cyano_tmRNA.RF01851.fasta.gz",
+                "@id": "./sequence-categorisation/cyano_tmRNA.RF01851.fasta.gz",
                 "@type": "File",
                 "name": "cyano_tmRNA.RF01851.fasta.gz",
                 "contentSize": 488,
@@ -608,7 +608,7 @@
                 "description": "sequence data for a cyanobacterial transfer-messenger RNA (tmRNA) molecule"
             },
             {
-                "@id": "EMOBON00093/sequence-categorisation/tRNA-Sec.RF01852.fasta.gz",
+                "@id": "./sequence-categorisation/tRNA-Sec.RF01852.fasta.gz",
                 "@type": "File",
                 "name": "tRNA-Sec.RF01852.fasta.gz",
                 "contentSize": 1625,
@@ -620,7 +620,7 @@
                 "description": "sequence data for a specific transfer RNA (tRNA) molecule"
             },
             {
-                "@id": "EMOBON00093/sequence-categorisation/tRNA.RF00005.fasta.gz",
+                "@id": "./sequence-categorisation/tRNA.RF00005.fasta.gz",
                 "@type": "File",
                 "name": "tRNA.RF00005.fasta.gz",
                 "contentSize": 177711,
@@ -632,7 +632,7 @@
                 "description": " likely contains the sequence data for a transfer RNA (tRNA) molecule"
             },
             {
-                "@id": "EMOBON00093/sequence-categorisation/tmRNA.RF00023.fasta.gz",
+                "@id": "./sequence-categorisation/tmRNA.RF00023.fasta.gz",
                 "@type": "File",
                 "name": "tmRNA.RF00023.fasta.gz",
                 "contentSize": 7624,
@@ -644,29 +644,29 @@
                 "description": "sequence data for a transfer-messenger RNA (tmRNA) molecule"
             },
     {
-        "@id": "taxonomy-summary/",
+        "@id": "./taxonomy-summary",
         "@type": "Dataset",
         "name": "taxonomy-summary",
         "hasPart": [
-            {"@id": "LSU"},
-            {"@id": "SSU"}
+            {"@id": "./taxonomy-summary/LSU"},
+            {"@id": "./taxonomy-summary/SSU"}
                 ]
     },
         {
-            "@id": "LSU",
+            "@id": "./taxonomy-summary/LSU",
             "@type": "Dataset",
             "name": "LSU",
             "hasPart": [
-               {"@id": "mgf-s3-prototype/tree/main/EMOBON00093/taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq.gz"},
-               {"@id": "mgf-s3-prototype/tree/main/EMOBON00093/taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq.tsv"},
-               {"@id": "mgf-s3-prototype/tree/main/EMOBON00093/taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq.txt"},
-               {"@id": "mgf-s3-prototype/tree/main/EMOBON00093/taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq_hdf5.biom"},
-               {"@id": "mgf-s3-prototype/tree/main/EMOBON00093/taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq_json.biom"},
-               {"@id": "mgf-s3-prototype/tree/main/EMOBON00093/taxonomy-summary/LSU/krona.html"}
+               {"@id": "./taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq.gz"},
+               {"@id": "./taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq.tsv"},
+               {"@id": "./taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq.txt"},
+               {"@id": "./taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq_hdf5.biom"},
+               {"@id": "./taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq_json.biom"},
+               {"@id": "./taxonomy-summary/LSU/krona.html"}
             ]
         },
             {
-                "@id": "EMOBON00093/taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq.gz",
+                "@id": "./taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq.gz",
                 "@type": "File",
                 "name": "DBH.merged_LSU.fasta.mseq.gz",
                 "contentSize": 970445,
@@ -678,7 +678,7 @@
                 "description": "LSU sequences used for indentification"
             },
             {
-                "@id": "EMOBON00093/taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq.tsv",
+                "@id": "./taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq.tsv",
                 "@type": "File",
                 "name": "DBH.merged_LSU.fasta.mseq.tsv",
                 "contentSize": 54959,
@@ -690,7 +690,7 @@
                 "description": "Tab-separated formatted taxon counts for LSU sequences"
             },
             {
-                "@id": "EMOBON00093/taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq.txt",
+                "@id": "./taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq.txt",
                 "@type": "File",
                 "name": "DBH.merged_LSU.fasta.mseq.txt",
                 "contentSize": 47253,
@@ -702,7 +702,7 @@
                 "description": "Text-based taxon counts for LSU sequences"
             },
             {
-                "@id": "EMOBON00093/taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq_hdf5.biom",
+                "@id": "./taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq_hdf5.biom",
                 "@type": "File",
                 "name": "DBH.merged_LSU.fasta.mseq_hdf5.biom",
                 "contentSize": 65712,
@@ -714,7 +714,7 @@
                 "description": "BIOM formatted hdf5 taxon counts for LSU sequences"
             },
             {
-                "@id": "EMOBON00093/taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq_json.biom",
+                "@id": "./taxonomy-summary/LSU/DBH.merged_LSU.fasta.mseq_json.biom",
                 "@type": "File",
                 "name": "DBH.merged_LSU.fasta.mseq_json.biom",
                 "contentSize": 76542,
@@ -726,7 +726,7 @@
                 "description": "BIOM formatted taxon counts for LSU sequences"
             },
             {
-                "@id": "EMOBON00093/taxonomy-summary/LSU/krona.html",
+                "@id": "./taxonomy-summary/LSU/krona.html",
                 "@type": "File",
                 "name": "krona.html",
                 "contentSize": 307411,
@@ -738,21 +738,21 @@
                 "description": "Krona summary of LSU taxonomic inventory"
             },
     {
-        "@id": "SSU",
+        "@id": "./taxonomy-summary/SSU",
         "@type": "Dataset",
         "name": "SSU",
         "hasPart": [
-            {"@id": "mgf-s3-prototype/tree/main/EMOBON00093/taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq.gz"},
-            {"@id": "mgf-s3-prototype/tree/main/EMOBON00093/taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq.tsv"},
-            {"@id": "mgf-s3-prototype/tree/main/EMOBON00093/taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq.txt"},
-            {"@id": "mgf-s3-prototype/tree/main/EMOBON00093/taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq_hdf5.biom"},
-            {"@id": "mgf-s3-prototype/tree/main/EMOBON00093/taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq_json.biom"},
-            {"@id": "mgf-s3-prototype/tree/main/EMOBON00093/taxonomy-summary/SSU/krona.html"}
+            {"@id": "./taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq.gz"},
+            {"@id": "./taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq.tsv"},
+            {"@id": "./taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq.txt"},
+            {"@id": "./taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq_hdf5.biom"},
+            {"@id": "./taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq_json.biom"},
+            {"@id": "./taxonomy-summary/SSU/krona.html"}
           ]
 
     },
         {
-            "@id": "EMOBON00093/taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq.gz",
+            "@id": "./taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq.gz",
             "@type": "File",
             "name": "DBH.merged_SSU.fasta.mseq.gz",
             "contentSize": 472282,
@@ -764,7 +764,7 @@
             "description": "SSU sequences used for identification"
         },
         {
-            "@id": "EMOBON00093/taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq.tsv",
+            "@id": "./taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq.tsv",
             "@type": "File",
             "name": "DBH.merged_SSU.fasta.mseq.tsv",
             "contentSize": 35379,
@@ -776,7 +776,7 @@
             "description": "Tab-separated formatted taxon counts for SSU sequences"
         },
         {
-            "@id": "EMOBON00093/taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq.txt",
+            "@id": "./taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq.txt",
             "@type": "File",
             "name": "DBH.merged_SSU.fasta.mseq.txt",
             "contentSize": 29980,
@@ -788,7 +788,7 @@
             "description": "Text-based formatted taxon counts for SSU sequences"
         },
         {
-            "@id": "EMOBON00093/taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq_hdf5.biom",
+            "@id": "./taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq_hdf5.biom",
             "@type": "File",
             "name": "DBH.merged_SSU.fasta.mseq_hdf5.biom",
             "contentSize": 55472,
@@ -800,7 +800,7 @@
             "description": "BIOM formatted hdf5 taxon counts for SSU sequences"
         },
         {
-            "@id": "EMOBON00093/taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq_json.biom",
+            "@id": "./taxonomy-summary/SSU/DBH.merged_SSU.fasta.mseq_json.biom",
             "@type": "File",
             "name": "DBH.merged_SSU.fasta.mseq_json.biom",
             "contentSize": 49705,
@@ -812,7 +812,7 @@
             "description": "BIOM formatted taxon counts for SSU sequences"
         },
         {
-            "@id": "EMOBON00093/taxonomy-summary/SSU/krona.html",
+            "@id": "./taxonomy-summary/SSU/krona.html",
             "@type": "File",
             "name": "krona.html",
             "contentSize": 283427,
