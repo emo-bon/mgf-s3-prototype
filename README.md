@@ -1,4 +1,7 @@
 # mgf-s3-prototype
+
+***The repositories that will hold the MFG outputs are still under investigation, so while the data in here are all valid, they may be moved to another location and another organisation later***
+
 ## Prerequisites
 - [Get Started with DVC](https://dvc.org/doc/start)
 - `~/.aws` folder with S3 config and credentials
